@@ -1,0 +1,211 @@
+.our-clients-wrapper {
+    background: #fff;
+    margin: 0 auto;
+    padding: 40px 0;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+
+}
+
+/* Main container */
+.our-clients-container {
+    /* width: 1002.34px;
+    height: 132.92px; */
+    padding-left: 100.23px;
+    padding-right: 100.23px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+    opacity: 1;
+    gap: 11.14px;
+}
+
+/* Text block */
+.our-clients-text {
+    width: 772.64px;
+    height: 53.57px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5.57px;
+    text-align: center;
+}
+
+.our-clients-heading {
+    font-size: 20px;
+    font-weight: 600;
+    margin: 0;
+}
+
+.our-clients-text p {
+    font-size: 14px;
+    color: #4D4D4D;
+    margin: 0;
+}
+
+/* Icons container */
+.icons-wrapper {
+    width: 801.87px;
+    height: 68.21px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    opacity: 1;
+}
+
+.client-icon {
+    width: 27.84px;
+    height: 27.84px;
+    position: relative;
+    top: 2.78px;
+    left: 2.78px;
+    opacity: 1;
+}
+
+.key-stats-section {
+    padding: 30px 0px;
+}
+
+.key-stats-section .key-stat-block h3 {
+    font-weight: 600;
+    font-size: 25.06px;
+    line-height: 30.63px;
+    letter-spacing: 0%;
+    color: #4D4D4D;
+
+
+}
+
+.key-stats-section .key-stat-block p {
+    font-weight: 400;
+    font-size: 11.14px;
+    line-height: 16.71px;
+    letter-spacing: 0%;
+    color: #717171;
+;
+
+}
+
+/* Container for multiple key stat blocks */
+.key-stats-multiple {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    width: 100%;
+    box-sizing: border-box;
+    margin-top: 20px;
+    text-align: left !important;
+}
+
+.key-stats-multiple .key-stat-icon {
+    width: 24px;
+    height: 24px;
+}
+
+/* Each individual key stat block */
+.key-stats-multiple .key-stat-block {
+    flex: 1;
+    min-width: 180px;
+    display: flex;
+    flex-direction: column;
+    gap: 5.57px;
+}
+
+/* Heading styles */
+.key-stat-block h4 {
+    margin: 0;
+    font-size: 18px;
+    font-weight: 700;
+    color: #333;
+    /* line-height: 100%; */
+}
+
+/* Paragraph styles */
+.key-stat-block p {
+    margin: 0;
+    font-size: 16px;
+    line-height: 23px;
+    font-weight: 400;
+    color: #000000;
+    /* text-align: left; */
+
+}
+
+/* ---------- Responsive CSS ---------- */
+
+
+
+@media screen and (max-width: 1024px) {
+  .our-clients-container {
+    width: 100%;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  .our-clients-text,
+  .icons-wrapper {
+    width: 100%;
+  }
+
+  .key-stats-multiple {
+    flex-wrap: wrap;
+    gap: 24px;
+  }
+
+  .key-stats-multiple .key-stat-block {
+    flex: 1 1 45%; /* two columns */
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .our-clients-container {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .key-stats-multiple .key-stat-block {
+    flex: 1 1 100%; /* stack blocks vertically */
+  }
+
+  .key-stat-block h4 {
+    font-size: 16px;
+  }
+
+  .key-stat-block p {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .client-icon {
+    width: 24px;
+    height: 24px;
+    top: 0;
+    left: 0;
+  }
+
+  .icons-wrapper {
+    flex-wrap: wrap;
+    /* justify-content: space-betwe; */
+    gap: 16px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .our-clients-heading {
+    font-size: 18px;
+  }
+
+  .our-clients-text p {
+    font-size: 12px;
+  }
+
+  .key-stat-block h4 {
+    font-size: 15px;
+  }
+
+  .key-stat-block p {
+    font-size: 13px;
+  }
+}
