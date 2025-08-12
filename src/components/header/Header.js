@@ -1,56 +1,103 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useRef } from 'react';
 import './Header.css';
 import logo from '../../assets/images/companyLogo.png';
 import MegaMenuSolutions from '../MegaMenu/megamenuSolutions/MegaMenuSolutions';
 import MegaMenuWhoWeAre from '../MegaMenu/megawhoweAre/MegaMenuWhoWeAre';
-import { Link } from 'react-router-dom';
-import { useNavigate } from 'react-router-dom';
-
+import { Link, useNavigate } from 'react-router-dom';
 
 const Header = () => {
+  const navigate = useNavigate();
+  const sidebarRef = useRef(null);
 
-  useEffect(() => {
-  const handleLinkClick = (e) => {
-    const linkClicked = e.target.closest('a, .dropdown-item, .nav-link, .register_button');
+  // 🔸 Close sidebar when clicking outside (on small devices)
+useEffect(() => {
+  const clearDropdowns = () => {
+    document.querySelectorAll('.dropdown-menu.show').forEach(menu => {
+      menu.classList.remove('show');
+    });
 
-    if (linkClicked) {
-      const openDropdowns = document.querySelectorAll('.dropdown-menu.show');
-      openDropdowns.forEach((menu) => {
+    document.querySelectorAll('.dropdown-toggle[aria-expanded="true"]').forEach(toggle => {
+      toggle.setAttribute('aria-expanded', 'false');
+    });
+  };
+
+  // Close dropdowns on initial load
+  clearDropdowns();
+
+  // Close dropdowns on resize
+  const handleResize = () => clearDropdowns();
+  window.addEventListener('resize', handleResize);
+
+  return () => window.removeEventListener('resize', handleResize);
+}, []);
+
+
+useEffect(() => {
+  const handleOutsideClick = (event) => {
+    const sidebar = document.querySelector('.navbar-collapse.show');
+    const toggler = document.querySelector('.navbar-toggler');
+    const nav = document.getElementById('mainNav');
+
+    // If sidebar is open, and click is outside the sidebar AND not on the toggler
+    if (
+      sidebar &&
+      nav &&
+      !nav.contains(event.target) &&
+      !toggler.contains(event.target)
+    ) {
+      sidebar.classList.remove('show');
+
+      // Also close dropdowns if any
+      document.querySelectorAll('.dropdown-menu.show').forEach(menu => {
         menu.classList.remove('show');
       });
 
-      // Also close parent dropdown toggles
-      const toggles = document.querySelectorAll('.dropdown-toggle[aria-expanded="true"]');
-      toggles.forEach(toggle => {
+      document.querySelectorAll('.dropdown-toggle[aria-expanded="true"]').forEach(toggle => {
         toggle.setAttribute('aria-expanded', 'false');
       });
     }
   };
 
-  document.addEventListener('click', handleLinkClick);
-
+  document.addEventListener('click', handleOutsideClick);
   return () => {
-    document.removeEventListener('click', handleLinkClick);
+    document.removeEventListener('click', handleOutsideClick);
   };
 }, []);
 
+  // 🔸 Helper to close mega menus + sidebar
+  const closeMenus = () => {
+    // Close dropdown menus
+    document.querySelectorAll('.dropdown-menu.show').forEach(menu => {
+      menu.classList.remove('show');
+    });
 
-  const navigate=useNavigate();
+    // Reset aria-expanded
+    document.querySelectorAll('.dropdown-toggle[aria-expanded="true"]').forEach(toggle => {
+      toggle.setAttribute('aria-expanded', 'false');
+    });
 
-  const Contactus=()=>{
-    // alert("hello");
+    // Close mobile sidebar
+    const sidebar = document.querySelector('.navbar-collapse');
+    if (sidebar && sidebar.classList.contains('show')) {
+      sidebar.classList.remove('show');
+    }
+  };
+
+  const Contactus = () => {
     navigate('/contactus');
+    closeMenus(); // optional: close sidebar if on mobile
+  };
 
-  }
+  const RegisterNow = () => {
+    alert("Will register soon...");
+    closeMenus(); // optional: close sidebar if on mobile
+  };
 
-  const RegisterNow=()=>{
-    alert("will register soon....");
-  }
   return (
     <div className="header-container fixed-top">
       <nav className="navbar navbar-expand-lg">
         <div className="container">
-          {/* Brand  */}
+          {/* Brand */}
           <a className="navbar-brand d-flex align-items-center" href="#">
             <img src={logo} alt="Company Logo" height="50" width="80" />
             <span className="ms-2 fw-bold">DatanovelTech</span>
@@ -70,9 +117,9 @@ const Header = () => {
           </button>
 
           {/* Nav links */}
-          <div className="collapse navbar-collapse" id="mainNav">
-            {/* ms-auto pushes nav items to the right */}
+          <div className="collapse navbar-collapse" id="mainNav" ref={sidebarRef}>
             <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
+              {/* Solutions Dropdown */}
               <li className="nav-item dropdown">
                 <a
                   className="nav-link dropdown-toggle"
@@ -84,11 +131,10 @@ const Header = () => {
                 >
                   Solutions
                 </a>
-                <MegaMenuSolutions />
+                <MegaMenuSolutions closeMenus={closeMenus} />
               </li>
 
-
-
+              {/* Who We Are Dropdown */}
               <li className="nav-item dropdown">
                 <a
                   className="nav-link dropdown-toggle"
@@ -100,13 +146,15 @@ const Header = () => {
                 >
                   Who&nbsp;We&nbsp;Are
                 </a>
-                <MegaMenuWhoWeAre />
+                <MegaMenuWhoWeAre closeMenus={closeMenus} />
               </li>
+
+              {/* Products */}
               <li className="nav-item">
-                <Link className="nav-link" to="/products">Products</Link>
+                <Link className="nav-link" to="/products" onClick={closeMenus}>Products</Link>
               </li>
 
-
+              {/* Blogs */}
               <li className="nav-item dropdown">
                 <a
                   className="nav-link dropdown-toggle"
@@ -119,12 +167,14 @@ const Header = () => {
                   Blogs
                 </a>
                 <ul className="dropdown-menu" aria-labelledby="blogsDropdown">
-                  <li><a className="dropdown-item" href="#">Action</a></li>
-                  <li><a className="dropdown-item" href="#">Another action</a></li>
+                  <li><a className="dropdown-item" href="#" onClick={closeMenus}>Action</a></li>
+                  <li><a className="dropdown-item" href="#" onClick={closeMenus}>Another action</a></li>
                   <li><hr className="dropdown-divider" /></li>
-                  <li><a className="dropdown-item" href="#">Something else</a></li>
+                  <li><a className="dropdown-item" href="#" onClick={closeMenus}>Something else</a></li>
                 </ul>
               </li>
+
+              {/* Contact Us / Register */}
               <li className="nav-item">
                 <button className='register_button' onClick={Contactus}>Contact Us</button>
               </li>
@@ -134,7 +184,6 @@ const Header = () => {
             </ul>
           </div>
         </div>
-
       </nav>
     </div>
   );

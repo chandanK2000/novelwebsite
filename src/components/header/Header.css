@@ -15,6 +15,7 @@
   color: #FFFFFF;
   border: none;
 }
+
 .register_button:hover {
   background: linear-gradient(135deg, #4CAF4F, #0a0a0a);
 }
