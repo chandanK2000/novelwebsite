@@ -6,12 +6,9 @@
 
 .register_button {
   /* background: #4CAF4F; */
-    background: linear-gradient(135deg, #4CAF4F, #2f2e7d); /* Green gradient */
-  padding-top: 9.74px;
-  padding-right: 22.27px;
-  padding-bottom: 9.74px;
-  padding-left: 22.27px;
-  border-radius: 2.78px;
+  background: linear-gradient(135deg, #4CAF4F, #2f2e7d);
+  /* Green gradient */
+  padding: 9.74px 22.27px 9.74px 22.27px;
   color: #FFFFFF;
   border: none;
 }
@@ -26,11 +23,13 @@
   gap: 16.71px;
   background-color: #ffffff;
   opacity: 1;
+  font-size: 16px;
+  font-weight: 600;
 }
 
 .navbar-nav .nav-link:hover,
 .navbar-nav .nav-link:focus {
-  border-bottom: 1px solid #4CAF4F; 
+  border-bottom: 1px solid #4CAF4F;
   color: #4CAF4F;
   transition: border-bottom 0.8s ease-in;
 }
@@ -66,7 +65,8 @@
   .navbar-toggler {
     z-index: 1100;
   }
-   /* Clean hamburger icon (no shadow or border) */
+
+  /* Clean hamburger icon (no shadow or border) */
   .navbar-toggler {
     border: none !important;
     box-shadow: none !important;
@@ -78,4 +78,3 @@
     box-shadow: none !important;
   }
 }
-

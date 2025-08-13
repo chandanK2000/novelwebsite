@@ -9,10 +9,12 @@ import CaseStudies from "./pages/whoweare/casestudies/CaseStudies";
 import AwardsAndEvents from "./pages/whoweare/awardsAndevents/AwardsAndEvents";
 import Products from "./pages/products/Products";
 import ContactUs from "./pages/contactus/ContactUs";
+import ScrollTotopcomponents from "./components/ScrollTotopcomponents";
 // import TopScrollIndicator from "./pages/topscrollindicator/TopScrollIndicator";
 function App() {
   return (
     <HashRouter>
+      <ScrollTotopcomponents/>
       <Header/>
             {/* <TopScrollIndicator/> */}
 
@@ -23,9 +25,6 @@ function App() {
         <Route exact path="/awardsandevents" element={<AwardsAndEvents/>}/>
         <Route exact path="/products" element={<Products/>}/>
         <Route exact path="/contactus" element={<ContactUs/>}/>
-
-        
-
 
         
       </Routes>

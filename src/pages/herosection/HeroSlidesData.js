@@ -1,7 +1,7 @@
 import heroImage from '../../assets/images/Illustration.png';
-import techimage1 from '../../assets/images/techimage1.png';
-import techimage2 from '../../assets/images/techimage2.png';
-import techimage3 from '../../assets/images/techimage3.png';
+import techimage1 from '../../assets/images/Illustration.png';
+import techimage2 from '../../assets/images/Illustration.png';
+import techimage3 from '../../assets/images/Illustration.png';
 
 const heroSlides = [
   {

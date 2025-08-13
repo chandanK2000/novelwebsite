@@ -6,9 +6,50 @@
 }
 
 .clientTestonomail_section h3 {
-    font-size: 24px;
+    font-size: 30px;
     margin-bottom: 8px;
 }
+
+.pipe-animation {
+    margin: 8px auto 24px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.pipe {
+    position: relative;
+    width: 200px;
+    height: 10px;
+    background-color: #eb14eb;
+    border-radius: 3px;
+    overflow: hidden;
+}
+
+.ball {
+    position: absolute;
+    top: 0px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    /* background: linear-gradient(135deg, #031f03, rgb(18, 19, 18)); */
+    background-color: black;
+    animation: moveBall 2.5s ease-in-out infinite alternate;
+    
+}
+
+@keyframes moveBall {
+    0% {
+        left: 0%;
+    }
+
+    100% {
+        left: calc(100% - 16px);
+    }
+}
+
 
 .clientTestonomail_section p {
     max-width: 750px;
@@ -16,16 +57,16 @@
     font-size: 16px;
     line-height: 1.5;
 }
+
 /* Add horizontal gap between carousel cards */
 .testimonial-slider .slick-slide {
-  padding: 0 20px; 
-  box-sizing: border-box;
+    padding: 0 20px;
+    box-sizing: border-box;
 }
 
 
 .testimonial-slider {
-    max-width: 1000px;
-    margin: 0 auto;
+    /* margin: 0 auto; */
     padding: 0 10px;
 }
 
@@ -48,8 +89,8 @@
 }
 
 .testimonial-card img {
-    width: 57px;
-    height: 57px;
+    width: 65px;
+    height: 65px;
     border-radius: 50%;
     object-fit: cover;
     margin-bottom: 10px;
@@ -58,7 +99,7 @@
 .testimonial-card h4 {
     font-weight: 700;
     font-style: Bold;
-    font-size: 12px;
+    font-size: 18px;
     line-height: 15px;
     letter-spacing: 0%;
     color: rgba(16, 62, 19, 1);
@@ -68,7 +109,7 @@
 .testimonial-card p {
     font-weight: 600;
     font-style: Bold;
-    font-size: 12px;
+    font-size: 14px;
     line-height: 15px;
     letter-spacing: 0%;
     color: rgba(113, 113, 113, 1);

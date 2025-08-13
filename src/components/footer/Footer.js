@@ -2,7 +2,7 @@ import React, { use } from 'react';
 import './Footer.css';
 import { FaFacebookF, FaInstagram, FaLinkedinIn, FaYoutube, FaPaperPlane } from 'react-icons/fa';
 import logo from '../../assets/images/companyLogo.png';
-import { useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 const Footer = () => {
 
   const navigate = useNavigate();
@@ -35,12 +35,21 @@ const Footer = () => {
 
 
   }
+
+  const ContactusPage=()=>{
+      navigate('/contactus');
+    // window.scrollTo(0, 0);
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth',
+    });
+  }
   return (
     <footer className="footer">
       {/* Newsletter Banner */}
       <div className="footer-newsletter">
         <div className="newsletter-content">
-          <button className="contact-btn">Contact Us</button>
+          <button className="contact-btn" onClick={ContactusPage} >Contact Us</button>
           <h3>Newsletter</h3>
           <p>Keep up with our latest news and events. Subscribe to our newsletter.</p>
           <form className="newsletter-form">
@@ -60,7 +69,9 @@ const Footer = () => {
           <p>All rights reserved</p>
           <div className="social-icons">
             <a href="#"><FaInstagram /></a>
-            <a href="#"><FaLinkedinIn /></a>
+            {/* <a href="#"><FaLinkedinIn /></a> */}
+            <a href="https://www.linkedin.com/company/datanoveltech/" target='_blank'><FaLinkedinIn /></a>
+            
             <a href="#"><FaFacebookF /></a>
             <a href="#"><FaYoutube /></a>
           </div>
@@ -71,7 +82,7 @@ const Footer = () => {
           <h4>Company</h4>
           <ul>
             <li><a href="#">About Us</a></li>
-            <li><a href="#">Contact Us</a></li>
+            <li><Link to="/contactus">Contact Us</Link></li>
             <li><a href="#">Blogs</a></li>
             <li><a href="#">Pricing</a></li>
             <li><a href="#">Testimonials</a></li>

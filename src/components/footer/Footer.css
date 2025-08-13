@@ -27,7 +27,8 @@ footer a:hover {
 
 
 .contact-btn {
-    background-color: rgba(76, 175, 79, 1);
+    /* background-color: rgba(76, 175, 79, 1); */
+    background: linear-gradient(135deg, #4CAF4F, #2f2e7d);
     color: #fff;
     border: none;
     outline: none;
@@ -39,6 +40,13 @@ footer a:hover {
 
 
 }
+
+.contact-btn:hover {
+    background: linear-gradient(135deg, #23df29, #2f2e7d);
+
+}
+
+
 
 
 
@@ -80,7 +88,9 @@ footer a:hover {
 }
 
 .newsletter-form button {
-    background-color: #00A859;
+    /* background-color: #00A859; */
+    background: linear-gradient(135deg, #4CAF4F, #2f2e7d);
+
     color: #fff;
     border: none;
     padding: 0 20px;
@@ -89,7 +99,9 @@ footer a:hover {
 }
 
 .newsletter-form button:hover {
-    background-color: #008c4a;
+    /* background-color: #008c4a; */
+    background: linear-gradient(135deg, #23df29, #2f2e7d);
+
 }
 
 /* ==== Footer Main Block ==== */
@@ -119,7 +131,7 @@ footer a:hover {
     width: 120px;
     margin-bottom: 10px;
     background-color: white;
-    border-radius:5px;
+    border-radius: 5px;
     cursor: pointer;
 }
 
@@ -141,9 +153,9 @@ footer a:hover {
     display: flex;
     gap: 15px;
     margin-top: 10px;
-
     opacity: 1;
     background-color: rgba(38, 50, 56, 1);
+
     border-radius: 50%;
 
 }
@@ -155,7 +167,9 @@ footer a:hover {
     width: 28px;
     height: 28px;
     border-radius: 50%;
-    background-color: #3f3e3e;
+    /* background-color: #3f3e3e; */
+    background: linear-gradient(135deg, #4CAF4F, #2f2e7d);
+
     justify-content: center;
     align-items: center;
     text-align: center;
@@ -190,7 +204,7 @@ footer a:hover {
 .footer-links li {
     margin-bottom: 8px;
     font-weight: 400;
-    font-size: 9.74px;
+    font-size: 14px;
     line-height: 13.92px;
     color: rgba(38, 50, 56, 1);
 }
@@ -250,6 +264,7 @@ footer a:hover {
 @media (max-width: 992px) {
     .footer-block {
         flex-direction: column;
+        padding: 20px 10px 0px;
     }
 
     .newsletter-form,
@@ -257,4 +272,10 @@ footer a:hover {
         border-radius: 10px;
         overflow: visible;
     }
+
+    .footer-subscribe {
+        flex: 1 1 100px;
+
+    }
+
 }

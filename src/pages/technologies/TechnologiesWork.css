@@ -1,5 +1,4 @@
 .technologies-section {
-    /* width: 100%; */
     background-color: #04275B;
     padding: 20px 0;
 
@@ -7,7 +6,7 @@
 
 .technologies-container {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     box-sizing: border-box;
 }
@@ -34,8 +33,8 @@
 }
 
 .tech-image-row img {
-    width: 64.55px;
-    height: 64.55px;
+    width: 80px;
+    height: 80.55px;
     object-fit: contain;
     opacity: 1;
 }

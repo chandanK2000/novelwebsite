@@ -1,10 +1,11 @@
 import React, { useState, useEffect } from 'react';
-import './ScrollToTopButton.css';
+import './ScrollToTopButton.css'; // Keep all styling here
+import {  FaLinkedinIn, FaYoutube,FaTwitter, FaWhatsapp} from 'react-icons/fa';
 
-const ScrollToTopButton = () => {
+// FaFacebookF, FaInstagram,
+const ScrollElements = () => {
   const [isVisible, setIsVisible] = useState(false);
 
-  // Show button after scrolling down 300px
   const handleScroll = () => {
     const scrollTop = window.scrollY || document.documentElement.scrollTop;
     setIsVisible(scrollTop > 300);
@@ -23,12 +24,35 @@ const ScrollToTopButton = () => {
   }, []);
 
   return (
-    isVisible && (
-      <button className="scroll-to-top" onClick={scrollToTop} aria-label="Scroll to top">
-        ↑
-      </button>
-    )
+    <>
+      {isVisible && (
+        <>
+          <button className="scroll-to-top" onClick={scrollToTop} aria-label="Scroll to top">
+            ↑
+          </button>
+
+
+        </>
+      )}
+      <div className="social-iconsscroll">
+        {/* <a href="#"><FaInstagram /></a> */}
+        <a href="https://www.linkedin.com/company/datanoveltech/" target='_blank'><FaLinkedinIn /></a>
+        {/* <a href="#"><FaFacebookF /></a> */}
+        <a href="https://www.youtube.com/" target='_blank'><FaYoutube /></a>
+        <a href="https://x.com/" target='_blank'><FaTwitter /></a>
+
+        
+        <a
+          href="https://wa.me/919999999999"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="WhatsApp"
+        >
+          <FaWhatsapp />
+        </a>
+      </div>
+    </>
   );
 };
 
-export default ScrollToTopButton;
+export default ScrollElements;

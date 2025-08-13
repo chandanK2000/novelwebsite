@@ -62,11 +62,11 @@ const settings = {
   <div style={{background:'#F5F7FA'}}>
       <section className="recent-projects-section">
       <h3>Recent Projects / Success Stories</h3>
-      <Slider ref={sliderRef} {...settings}>
+      <Slider ref={sliderRef} {...settings} className='my-3'>
         {projects.map((project) => (
           <div key={project.id} className="project-slide">
             <img src={project.image} alt={project.title} />
-            <h4>{project.title}</h4>
+            <h4 className='my-3'>{project.title}</h4>
           </div>
         ))}
       </Slider>
