@@ -1,4 +1,4 @@
-/* .product-banner {
+.product-banner {
     background-image: url('../../../assets/images/productbanner1.jfif');
     background-size: cover;
     background-position: center;
@@ -9,60 +9,12 @@
     align-items: center;
     color: white;
     text-align: center;
-} */
-
-.product-banner {
-  position: relative;
-  height: 576px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: white;
-  text-align: center;
-  overflow: hidden;
-/* clip-path: polygon(0 0, 100% 0, 100% 70%, 50% 100%, 0 70%); */
-/* clip-path: polygon(
-  0 0, 100% 0, 100% 85%, 80% 95%, 60% 85%, 40% 95%, 20% 85%, 0 95%
-); */
-
-
-
 }
 
-/* The div that shows the background image */
-.background-image {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-size: cover;
-  background-position: center;
-  transition: opacity 0.8s ease-in-out;
-  opacity: 1;
-  z-index: 1;
-}
-
-/* Fade out class makes opacity 0 */
-.fade-out {
-  opacity: 0.8;
-}
-
-/* Fade in class makes opacity 1 */
-.fade-in {
-  opacity: 1;
-}
-
-/* Content on top */
 .banner-content {
-  position: relative; /* above background */
-  z-index: 2;
-  padding: 20px 40px;
-  border-radius: 8px;
+    padding: 20px 40px;
+    border-radius: 8px;
 }
-
-
-
 
 .banner-content h3 {
     margin-bottom: 10px;

@@ -1,6 +1,6 @@
 .scroll-to-top {
   position: fixed;
-  bottom: 50px;
+  bottom: 30px;
   right: 10px;
   /* background-color: #7a7c7a; */
   background: linear-gradient(135deg, #4CAF4F, #2f2e7d);
@@ -32,7 +32,7 @@
 
 .social-iconsscroll {
   position: fixed;
-  top: 200px;
+  top: 100px;
   left: 10px; 
   display: flex;
   flex-direction: column;

@@ -10,12 +10,13 @@ import AwardsAndEvents from "./pages/whoweare/awardsAndevents/AwardsAndEvents";
 import Products from "./pages/products/Products";
 import ContactUs from "./pages/contactus/ContactUs";
 import ScrollTotopcomponents from "./components/ScrollTotopcomponents";
-import ChatBot from "./components/chatbot/ChatBot";
+// import TopScrollIndicator from "./pages/topscrollindicator/TopScrollIndicator";
 function App() {
   return (
     <HashRouter>
       <ScrollTotopcomponents/>
       <Header/>
+            {/* <TopScrollIndicator/> */}
 
       <Routes>
         <Route exact path="/" element={<Home/>}/>
@@ -29,7 +30,6 @@ function App() {
       </Routes>
       <Footer/>
       <ScrollToTopButton/>
-      <ChatBot/>
     </HashRouter>
   );
 }

@@ -63,10 +63,10 @@ const ClientTestonomial = () => {
     <section className='clientTestonomail_section'>
       <h3>Client Testimonial Example</h3>
       <div className="pipe-animation">
-        <div className="pipe">
-          <div className="ball"></div>
-        </div>
-      </div>
+  <div className="pipe">
+    <div className="ball"></div>
+  </div>
+</div>
       <p>
         The Nextcent blog is the best place to read about the latest membership insights, trends and more. See who's joining the community, read about how our community are increasing their membership income and lot's more.​      </p>
 
@@ -74,11 +74,7 @@ const ClientTestonomial = () => {
         {testimonials.map((item) => (
           <div key={item.id} className="testimonial-card">
             <img src={item.img} alt={item.name} />
-            {/* <h4>{item.name}</h4> */}
-         <h4>
-             <span className="name-initial">{item.name.charAt(0)}</span>
-            {item.name}
-         </h4>
+            <h4>{item.name}</h4>
             <p>{item.text}</p>
           </div>
         ))}

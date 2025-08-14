@@ -23,7 +23,7 @@
     position: relative;
     width: 200px;
     height: 10px;
-    background-color: #03228F;
+    background-color: #eb14eb;
     border-radius: 3px;
     overflow: hidden;
 }
@@ -35,9 +35,9 @@
     height: 10px;
     border-radius: 50%;
     /* background: linear-gradient(135deg, #031f03, rgb(18, 19, 18)); */
-    background-color: rgb(72, 240, 50);
+    background-color: black;
     animation: moveBall 2.5s ease-in-out infinite alternate;
-
+    
 }
 
 @keyframes moveBall {
@@ -70,9 +70,9 @@
     padding: 0 10px;
 }
 
-/* .testimonial-card {
+.testimonial-card {
     width: 204px;
-    min-height: 229px;
+    height: 229px;
     background-color: #fff;
     border-radius: 8px;
     text-align: left;
@@ -89,8 +89,9 @@
 }
 
 .testimonial-card img {
-    min-width: 350px ;
-    height: 240px;
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
     object-fit: cover;
     margin-bottom: 10px;
 }
@@ -113,77 +114,7 @@
     letter-spacing: 0%;
     color: rgba(113, 113, 113, 1);
 
-} */
-
-.testimonial-card {
-    width: 204px;
-    min-height: 229px;
-    background-color: #fff;
-    border-radius: 8px;
-    text-align: left;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    padding: 16px;
-    box-sizing: border-box;
-    margin: 0 auto;
-    opacity: 1;
-    cursor: pointer;
-
 }
-
-.testimonial-card img {
-    width: 100%;
-    height: 240px;
-    object-fit: cover;
-    border-radius: 6px;
-    margin-bottom: 10px;
-    object-position: top;
-    transition: transform 0.8s ease;
-
-
-}
-
-.testimonial-card img:hover {
-    transform: scale(1.02);
-}
-
-.testimonial-card h4 {
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 22px;
-    color: rgba(16, 62, 19, 1);
-    margin: 8px 0 4px;
-}
-
-.name-initial {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    width: 40px;
-    height: 40px;
-    background-color: #cdd1cd;
-    color: white;
-    font-weight: bold;
-    font-size: 16px;
-    border-radius: 50%;
-    margin-right: 8px;
-    text-transform: uppercase;
-    box-shadow: 0px 3px 2px rgba(34, 2, 2, 0.1);
-}
-
-
-.testimonial-card p {
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 18px;
-    color: rgba(113, 113, 113, 1);
-    margin: 20px 0px;
-}
-
-
 
 /* Custom Arrows below slider */
 .testimonial-arrows {

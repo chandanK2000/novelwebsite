@@ -1,0 +1,40 @@
+.technologies-section {
+    background-color: #04275B;
+    padding: 20px 0;
+
+}
+
+.technologies-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.technologies-heading {
+    color: #FFFFFF;
+    margin: 0;
+    text-align: center;
+    font-weight: 600;
+    font-size: 25.06px;
+    line-height: 30.63px;
+    letter-spacing: 0%;
+    text-align: center;
+
+}
+
+.tech-image-row {
+    margin: 20px 0px;
+    display: flex;
+    gap: 30px;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.tech-image-row img {
+    width: 80px;
+    height: 80.55px;
+    object-fit: contain;
+    opacity: 1;
+}

@@ -16,21 +16,11 @@
     line-height: 1.6;
     color: #717171;
     font-weight: 400;
+    /* line-height: 100%; */
+    /* letter-spacing: 0%; */
     text-align-last: center;
     text-align: justify;
 
-}
-
-.contact_us {
-  background: linear-gradient(135deg, #4CAF4F, #2f2e7d);
-  color: #FFFFFF;
-  border: none;
-  border-radius: 5px;
-  padding: 8px 12px;
-}
-
-.contact_us:hover {
-  background: linear-gradient(135deg, #4CAF4F, #0a0a0a);
 }
 
 .hero-image {
