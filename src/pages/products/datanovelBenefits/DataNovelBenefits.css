@@ -1,0 +1,120 @@
+.dataNovelBenefits-section {
+    padding: 30px 20px;
+    background-color: #ffffff;
+    text-align: center;
+    background-image: url('https://t4.ftcdn.net/jpg/07/07/02/79/360_F_707027965_o1Nawl8IUYvBowX2BWbJBO8lAyHtkuIa.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.dataNovelBenefits-heading {
+    font-size: 28px;
+    margin-bottom: 40px;
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 25.06px;
+    /* line-height: 30.63px; */
+    text-align: center;
+
+}
+
+/* Grid container */
+.dataNovelBenefits-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+/* Card styling */
+.dataNovelBenefits-card {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease;
+    text-align: left;
+    cursor: pointer;
+}
+
+.dataNovelBenefits-card:hover {
+    transform: translateY(-5px);
+}
+
+.dataNovelBenefits-card img {
+    width: 64px;
+    height: 64px;
+    margin-bottom: 15px;
+}
+
+.dataNovelBenefits-card h4 {
+    color: #04275B;
+    margin: 10px 0;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 25.06px;
+}
+
+.dataNovelBenefits-card p {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+    color: #717171;
+}
+
+/* Learn more link */
+.learn-more-link {
+    color: #04275B;
+    font-weight: 500;
+    text-decoration: none;
+    margin-top: 8px;
+    display: inline-flex;
+    align-items: center;
+    transition: color 0.3s ease;
+}
+
+.learn-more-link:hover {
+    color: #0052cc;
+}
+
+/* ========== Responsive Styles ========== */
+
+/* Tablet view: 2 columns */
+@media (max-width: 992px) {
+    .dataNovelBenefits-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+    }
+
+    .dataNovelBenefits-heading {
+        font-size: 24px;
+    }
+
+    .dataNovelBenefits-card h4 {
+        font-size: 20px;
+    }
+
+    .dataNovelBenefits-card p {
+        font-size: 16px;
+    }
+}
+
+/* Mobile view: 1 column */
+@media (max-width: 576px) {
+    .dataNovelBenefits-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .dataNovelBenefits-heading {
+        font-size: 22px;
+    }
+
+    .dataNovelBenefits-card h4 {
+        font-size: 18px;
+    }
+
+    .dataNovelBenefits-card p {
+        font-size: 15px;
+    }
+}

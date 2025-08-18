@@ -1,0 +1,78 @@
+.dynamic-dashboard-section {
+  background-image: url('https://media.istockphoto.com/id/1270899501/vector/abstract-technology-chip-processor-background-circuit-board-and-html-code-3d-illustration.jpg?s=612x612&w=0&k=20&c=jFGCzxPyX0BTiWVF4BvjJOsdnKKVPkejzMqzHUv4xeM=');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+
+.dynamic-dashboard-img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  
+}
+
+.dashboard-title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+/* .dashboard-title .highlight {
+  color: #007bff;
+} */
+
+.dashboard-description {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #fff;
+}
+
+.dashboard-features {
+  margin-top: 20px;
+}
+
+.feature-item {
+  font-size: 1rem;
+  color: #fff;
+}
+
+
+
+.feature-icon {
+  width: 16px;
+  height: 16px;
+  margin-right: 10px;
+}
+
+.get_started{
+    padding: 6px 10px;
+    margin: 10px 14px;
+    border-radius: 2.78px;
+    border: none;
+    outline: none;
+    color: white;
+    background-color: rgb(250, 147, 13);
+    font-weight: 500;
+    font-size: 16px;
+    text-align: center;
+
+}
+
+/* Responsive tweaks */
+@media (max-width: 768px) {
+  .dashboard-title {
+    font-size: 1.6rem;
+    text-align: center;
+  }
+
+  .dashboard-description {
+    text-align-last: center;
+  }
+
+  .dashboard-features {
+    text-align: left;
+    margin-top: 15px;
+  }
+}

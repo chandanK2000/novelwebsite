@@ -60,7 +60,7 @@ const ClientTestonomial = () => {
   let sliderRef = React.useRef(null);
 
   return (
-    <section className='clientTestonomail_section'>
+    <section className='clientTestonomail_section' id="testimonial">
       <h3>Client Testimonial Example</h3>
       <div className="pipe-animation">
         <div className="pipe">

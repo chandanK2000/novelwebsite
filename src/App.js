@@ -11,6 +11,7 @@ import Products from "./pages/products/Products";
 import ContactUs from "./pages/contactus/ContactUs";
 import ScrollTotopcomponents from "./components/ScrollTotopcomponents";
 import ChatBot from "./components/chatbot/ChatBot";
+import PrivacyPolicy from "./components/privacyPolicy/PrivacyPolicy";
 function App() {
   return (
     <HashRouter>
@@ -24,6 +25,9 @@ function App() {
         <Route exact path="/awardsandevents" element={<AwardsAndEvents/>}/>
         <Route exact path="/products" element={<Products/>}/>
         <Route exact path="/contactus" element={<ContactUs/>}/>
+        <Route exact path="/privacypolicy" element={<PrivacyPolicy/>}/>
+
+        
 
         
       </Routes>

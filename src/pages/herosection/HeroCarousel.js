@@ -24,18 +24,8 @@ const HeroCarousel = () => {
     >
       {heroSlides.map((slide, index) => (
         <SwiperSlide key={index}>
-          <div className="hero-slide">
-            {/* Left Content */}
-            <div className="hero-text">
-              <h1>{slide.title}</h1>
-              <p>{slide.subtitle}</p>
-              <button>Register</button>
-            </div>
-
-            {/* Right Image */}
-            <div className="hero-image">
-              <img src={slide.image} alt={`Slide ${index + 1}`} />
-            </div>
+          <div className="hero-image-only">
+            <img src={slide.image} alt={`Slide ${index + 1}`} />
           </div>
         </SwiperSlide>
       ))}

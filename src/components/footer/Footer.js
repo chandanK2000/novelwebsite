@@ -3,27 +3,27 @@ import './Footer.css';
 import { FaFacebookF, FaInstagram, FaLinkedinIn, FaYoutube, FaPaperPlane } from 'react-icons/fa';
 import logo from '../../assets/images/companyLogo.png';
 import { Link, useNavigate } from 'react-router-dom';
+import { HashLink } from 'react-router-hash-link';
 const Footer = () => {
-
   const navigate = useNavigate();
 
   function scrollToTop(duration = 1000) {
-  const start = window.scrollY;
-  const startTime = performance.now();
+    const start = window.scrollY;
+    const startTime = performance.now();
 
-  function animate(currentTime) {
-    const elapsed = currentTime - startTime;
-    const progress = Math.min(elapsed / duration, 1);
-    const ease = 1 - Math.pow(1 - progress, 3); // ease-out cubic
-    window.scrollTo(0, start * (1 - ease));
+    function animate(currentTime) {
+      const elapsed = currentTime - startTime;
+      const progress = Math.min(elapsed / duration, 1);
+      const ease = 1 - Math.pow(1 - progress, 3); // ease-out cubic
+      window.scrollTo(0, start * (1 - ease));
 
-    if (progress < 1) {
-      requestAnimationFrame(animate);
+      if (progress < 1) {
+        requestAnimationFrame(animate);
+      }
     }
-  }
 
-  requestAnimationFrame(animate);
-}
+    requestAnimationFrame(animate);
+  }
 
   const Homepage = () => {
     navigate('/');
@@ -36,8 +36,8 @@ const Footer = () => {
 
   }
 
-  const ContactusPage=()=>{
-      navigate('/contactus');
+  const ContactusPage = () => {
+    navigate('/contactus');
     // window.scrollTo(0, 0);
     window.scrollTo({
       top: 0,
@@ -71,7 +71,7 @@ const Footer = () => {
             <a href="#"><FaInstagram /></a>
             {/* <a href="#"><FaLinkedinIn /></a> */}
             <a href="https://www.linkedin.com/company/datanoveltech/" target='_blank'><FaLinkedinIn /></a>
-            
+
             <a href="#"><FaFacebookF /></a>
             <a href="#"><FaYoutube /></a>
           </div>
@@ -84,8 +84,12 @@ const Footer = () => {
             <li><a href="#">About Us</a></li>
             <li><Link to="/contactus">Contact Us</Link></li>
             <li><a href="#">Blogs</a></li>
-            <li><a href="#">Pricing</a></li>
-            <li><a href="#">Testimonials</a></li>
+            {/* <li><a href="#">Pricing</a></li> */}
+            {/* <li><a href="#"></a></li> */}
+            <li><HashLink smooth to="/#testimonial">Testimonials</HashLink></li>
+
+
+
           </ul>
         </div>
 
@@ -93,11 +97,11 @@ const Footer = () => {
         <div className="footer-links">
           <h4>Support</h4>
           <ul>
-            <li><a href="#">Help Center</a></li>
-            <li><a href="#">Terms of Service</a></li>
-            <li><a href="#">Legal</a></li>
-            <li><a href="#">Privacy Policy</a></li>
-            <li><a href="#">Status</a></li>
+            <li><a href="#">Faq</a></li>
+            {/* <li><a href="#">Terms of Service</a></li> */}
+            {/* <li><a href="#">Legal</a></li> */}
+            <li> <Link to="/privacypolicy">Privacy Policy</Link></li>
+            {/* <li><a href="#">Status</a></li> */}
           </ul>
         </div>
 

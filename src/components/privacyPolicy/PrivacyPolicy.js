@@ -1,0 +1,52 @@
+import React from 'react'
+
+const PrivacyPolicy = () => {
+  return (
+     <div className="container" style={{ marginTop: '120px' }}>
+      <h2>Privacy Policy</h2>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae accusamus dolorem voluptas ipsam nemo! Aspernatur provident obcaecati architecto, omnis repellendus dolor deleniti maiores! Ipsam inventore ex laborum doloremque fuga incidunt, nihil vel hic totam eos accusamus iusto sint omnis modi deserunt tempore voluptatum et tenetur officia, corporis ullam! Inventore repudiandae quas, est cupiditate corporis nostrum molestiae tempore aspernatur non magni laborum deserunt vel enim dignissimos totam atque eum ipsam neque ullam odio expedita quia placeat? Velit asperiores laudantium inventore quis esse tempora neque, officia sunt odit accusantium! Corporis unde impedit provident odit. Magni ut sit cumque perferendis voluptas veritatis ipsa?
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae accusamus dolorem voluptas ipsam nemo! Aspernatur provident obcaecati architecto, omnis repellendus dolor deleniti maiores! Ipsam inventore ex laborum doloremque fuga incidunt, nihil vel hic totam eos accusamus iusto sint omnis modi deserunt tempore voluptatum et tenetur officia, corporis ullam! Inventore repudiandae quas, est cupiditate corporis nostrum molestiae tempore aspernatur non magni laborum deserunt vel enim dignissimos totam atque eum ipsam neque ullam odio expedita quia placeat? Velit asperiores laudantium inventore quis esse tempora neque, officia sunt odit accusantium! Corporis unde impedit provident odit. Magni ut sit cumque perferendis voluptas veritatis ipsa?
+      </p>
+         <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae accusamus dolorem voluptas ipsam nemo! Aspernatur provident obcaecati architecto, omnis repellendus dolor deleniti maiores! Ipsam inventore ex laborum doloremque fuga incidunt, nihil vel hic totam eos accusamus iusto sint omnis modi deserunt tempore voluptatum et tenetur officia, corporis ullam! Inventore repudiandae quas, est cupiditate corporis nostrum molestiae tempore aspernatur non magni laborum deserunt vel enim dignissimos totam atque eum ipsam neque ullam odio expedita quia placeat? Velit asperiores laudantium inventore quis esse tempora neque, officia sunt odit accusantium! Corporis unde impedit provident odit. Magni ut sit cumque perferendis voluptas veritatis ipsa?
+      </p>
+         <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae accusamus dolorem voluptas ipsam nemo! Aspernatur provident obcaecati architecto, omnis repellendus dolor deleniti maiores! Ipsam inventore ex laborum doloremque fuga incidunt, nihil vel hic totam eos accusamus iusto sint omnis modi deserunt tempore voluptatum et tenetur officia, corporis ullam! Inventore repudiandae quas, est cupiditate corporis nostrum molestiae tempore aspernatur non magni laborum deserunt vel enim dignissimos totam atque eum ipsam neque ullam odio expedita quia placeat? Velit asperiores laudantium inventore quis esse tempora neque, officia sunt odit accusantium! Corporis unde impedit provident odit. Magni ut sit cumque perferendis voluptas veritatis ipsa?
+      </p>
+         <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae accusamus dolorem voluptas ipsam nemo! Aspernatur provident obcaecati architecto, omnis repellendus dolor deleniti maiores! Ipsam inventore ex laborum doloremque fuga incidunt, nihil vel hic totam eos accusamus iusto sint omnis modi deserunt tempore voluptatum et tenetur officia, corporis ullam! Inventore repudiandae quas, est cupiditate corporis nostrum molestiae tempore aspernatur non magni laborum deserunt vel enim dignissimos totam atque eum ipsam neque ullam odio expedita quia placeat? Velit asperiores laudantium inventore quis esse tempora neque, officia sunt odit accusantium! Corporis unde impedit provident odit. Magni ut sit cumque perferendis voluptas veritatis ipsa?
+      </p>
+
+         <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae accusamus dolorem voluptas ipsam nemo! Aspernatur provident obcaecati architecto, omnis repellendus dolor deleniti maiores! Ipsam inventore ex laborum doloremque fuga incidunt, nihil vel hic totam eos accusamus iusto sint omnis modi deserunt tempore voluptatum et tenetur officia, corporis ullam! Inventore repudiandae quas, est cupiditate corporis nostrum molestiae tempore aspernatur non magni laborum deserunt vel enim dignissimos totam atque eum ipsam neque ullam odio expedita quia placeat? Velit asperiores laudantium inventore quis esse tempora neque, officia sunt odit accusantium! Corporis unde impedit provident odit. Magni ut sit cumque perferendis voluptas veritatis ipsa?
+      </p>
+
+         <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae accusamus dolorem voluptas ipsam nemo! Aspernatur provident obcaecati architecto, omnis repellendus dolor deleniti maiores! Ipsam inventore ex laborum doloremque fuga incidunt, nihil vel hic totam eos accusamus iusto sint omnis modi deserunt tempore voluptatum et tenetur officia, corporis ullam! Inventore repudiandae quas, est cupiditate corporis nostrum molestiae tempore aspernatur non magni laborum deserunt vel enim dignissimos totam atque eum ipsam neque ullam odio expedita quia placeat? Velit asperiores laudantium inventore quis esse tempora neque, officia sunt odit accusantium! Corporis unde impedit provident odit. Magni ut sit cumque perferendis voluptas veritatis ipsa?
+      </p>
+         <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae accusamus dolorem voluptas ipsam nemo! Aspernatur provident obcaecati architecto, omnis repellendus dolor deleniti maiores! Ipsam inventore ex laborum doloremque fuga incidunt, nihil vel hic totam eos accusamus iusto sint omnis modi deserunt tempore voluptatum et tenetur officia, corporis ullam! Inventore repudiandae quas, est cupiditate corporis nostrum molestiae tempore aspernatur non magni laborum deserunt vel enim dignissimos totam atque eum ipsam neque ullam odio expedita quia placeat? Velit asperiores laudantium inventore quis esse tempora neque, officia sunt odit accusantium! Corporis unde impedit provident odit. Magni ut sit cumque perferendis voluptas veritatis ipsa?
+      </p>
+         <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae accusamus dolorem voluptas ipsam nemo! Aspernatur provident obcaecati architecto, omnis repellendus dolor deleniti maiores! Ipsam inventore ex laborum doloremque fuga incidunt, nihil vel hic totam eos accusamus iusto sint omnis modi deserunt tempore voluptatum et tenetur officia, corporis ullam! Inventore repudiandae quas, est cupiditate corporis nostrum molestiae tempore aspernatur non magni laborum deserunt vel enim dignissimos totam atque eum ipsam neque ullam odio expedita quia placeat? Velit asperiores laudantium inventore quis esse tempora neque, officia sunt odit accusantium! Corporis unde impedit provident odit. Magni ut sit cumque perferendis voluptas veritatis ipsa?
+      </p>   <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae accusamus dolorem voluptas ipsam nemo! Aspernatur provident obcaecati architecto, omnis repellendus dolor deleniti maiores! Ipsam inventore ex laborum doloremque fuga incidunt, nihil vel hic totam eos accusamus iusto sint omnis modi deserunt tempore voluptatum et tenetur officia, corporis ullam! Inventore repudiandae quas, est cupiditate corporis nostrum molestiae tempore aspernatur non magni laborum deserunt vel enim dignissimos totam atque eum ipsam neque ullam odio expedita quia placeat? Velit asperiores laudantium inventore quis esse tempora neque, officia sunt odit accusantium! Corporis unde impedit provident odit. Magni ut sit cumque perferendis voluptas veritatis ipsa?
+      </p>
+         <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae accusamus dolorem voluptas ipsam nemo! Aspernatur provident obcaecati architecto, omnis repellendus dolor deleniti maiores! Ipsam inventore ex laborum doloremque fuga incidunt, nihil vel hic totam eos accusamus iusto sint omnis modi deserunt tempore voluptatum et tenetur officia, corporis ullam! Inventore repudiandae quas, est cupiditate corporis nostrum molestiae tempore aspernatur non magni laborum deserunt vel enim dignissimos totam atque eum ipsam neque ullam odio expedita quia placeat? Velit asperiores laudantium inventore quis esse tempora neque, officia sunt odit accusantium! Corporis unde impedit provident odit. Magni ut sit cumque perferendis voluptas veritatis ipsa?
+      </p>
+         <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae accusamus dolorem voluptas ipsam nemo! Aspernatur provident obcaecati architecto, omnis repellendus dolor deleniti maiores! Ipsam inventore ex laborum doloremque fuga incidunt, nihil vel hic totam eos accusamus iusto sint omnis modi deserunt tempore voluptatum et tenetur officia, corporis ullam! Inventore repudiandae quas, est cupiditate corporis nostrum molestiae tempore aspernatur non magni laborum deserunt vel enim dignissimos totam atque eum ipsam neque ullam odio expedita quia placeat? Velit asperiores laudantium inventore quis esse tempora neque, officia sunt odit accusantium! Corporis unde impedit provident odit. Magni ut sit cumque perferendis voluptas veritatis ipsa?
+      </p>
+         <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae accusamus dolorem voluptas ipsam nemo! Aspernatur provident obcaecati architecto, omnis repellendus dolor deleniti maiores! Ipsam inventore ex laborum doloremque fuga incidunt, nihil vel hic totam eos accusamus iusto sint omnis modi deserunt tempore voluptatum et tenetur officia, corporis ullam! Inventore repudiandae quas, est cupiditate corporis nostrum molestiae tempore aspernatur non magni laborum deserunt vel enim dignissimos totam atque eum ipsam neque ullam odio expedita quia placeat? Velit asperiores laudantium inventore quis esse tempora neque, officia sunt odit accusantium! Corporis unde impedit provident odit. Magni ut sit cumque perferendis voluptas veritatis ipsa?
+      </p>
+      
+    </div>
+  )
+}
+
+export default PrivacyPolicy;

@@ -1,9 +1,9 @@
 import React from 'react';
 import './OurProcess.css';
-import discoveryIcon from '../../assets/icons/discovery.png';
-import planningIcon from '../../assets/icons/planning.png';
-import executeIcon from '../../assets/icons/execute.png';
-import deliverIcon from '../../assets/icons/deliver.png';
+import discoveryIcon from '../../assets/icons/discoveries.png';
+import planningIcon from '../../assets/icons/plannings.png';
+import executeIcon from '../../assets/icons/executes.png';
+import deliverIcon from '../../assets/icons/delivers.png';
 
 const processSteps = [
   {
