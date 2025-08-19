@@ -20,6 +20,8 @@ const MegaMenuWhoWeAre = ({ closeMenus }) => {
           <h6 className="mega-title">Our Company</h6>
           <ul className="mega-list list-unstyled">
             {/* Industries submenu */}
+           <li><Link className="dropdown-item" to="/aboutus" onClick={closeMenus}>About Us</Link></li>
+
             <li className="dropdown-submenu position-relative">
               <Link className="dropdown-item dropdown-toggle" to="#" data-bs-toggle="dropdown">
                 Industries

@@ -12,6 +12,8 @@ import ContactUs from "./pages/contactus/ContactUs";
 import ScrollTotopcomponents from "./components/ScrollTotopcomponents";
 import ChatBot from "./components/chatbot/ChatBot";
 import PrivacyPolicy from "./components/privacyPolicy/PrivacyPolicy";
+import Faqs from "./components/faqs/Faqs";
+import AboutUs from "./pages/whoweare/aboutus/AboutUs";
 function App() {
   return (
     <HashRouter>
@@ -26,10 +28,19 @@ function App() {
         <Route exact path="/products" element={<Products/>}/>
         <Route exact path="/contactus" element={<ContactUs/>}/>
         <Route exact path="/privacypolicy" element={<PrivacyPolicy/>}/>
+        <Route exact path="/faqs" element={<Faqs/>}/>
+        <Route exact path="/aboutus" element={<AboutUs/>}/>
+
+
 
         
 
+
+
+
         
+
+    
       </Routes>
       <Footer/>
       <ScrollToTopButton/>

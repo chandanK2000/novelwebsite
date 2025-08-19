@@ -81,11 +81,11 @@ const Footer = () => {
         <div className="footer-links">
           <h4>Company</h4>
           <ul>
-            <li><a href="#">About Us</a></li>
+            <li><Link to="/aboutus">About Us</Link></li>
             <li><Link to="/contactus">Contact Us</Link></li>
-            <li><a href="#">Blogs</a></li>
-            {/* <li><a href="#">Pricing</a></li> */}
-            {/* <li><a href="#"></a></li> */}
+            <li><Link to="/blogs">Blogs</Link></li>
+            {/* <li><Link to="/pricing">Pricing</Link></li> */}
+            {/* <li><Link to="/#"></Link></li> */}
             <li><HashLink smooth to="/#testimonial">Testimonials</HashLink></li>
 
 
@@ -97,7 +97,7 @@ const Footer = () => {
         <div className="footer-links">
           <h4>Support</h4>
           <ul>
-            <li><a href="#">Faq</a></li>
+            <li><Link to="/faqs">Faq</Link></li>
             {/* <li><a href="#">Terms of Service</a></li> */}
             {/* <li><a href="#">Legal</a></li> */}
             <li> <Link to="/privacypolicy">Privacy Policy</Link></li>
