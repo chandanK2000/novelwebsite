@@ -4,18 +4,8 @@ import './DataNovelLeadership.css';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import datanovelleadershipImage from '../../../../assets/images/datanovelleadershipImage.png';
-import { FaArrowLeft, FaArrowRight } from 'react-icons/fa';
-
-// Custom arrows
-const NextArrow = (props) => {
-    const { onClick } = props;
-    return <div className="slick-arrow custom-next" onClick={onClick}>Next</div>;
-};
-
-const PrevArrow = (props) => {
-    const { onClick } = props;
-    return <div className="slick-arrow custom-prev" onClick={onClick}>Prev</div>;
-};
+import leftarrow from '../../../../assets/icons/leftarrow.png';
+import rightarrow from '../../../../assets/icons/rightarrow.png';
 
 const leadershipData = [
     { project: "AI Analytics Platform", description: "Experience in building innovative tech solutions.", image: datanovelleadershipImage },
@@ -27,18 +17,32 @@ const leadershipData = [
 const DataNovelLeadership = () => {
     const sliderRef = useRef(null);
 
-    const settings = {
-        dots: true,
-        infinite: true,
-        speed: 500,
-        slidesToShow: 3,
-        slidesToScroll: 1,
-        arrows: false,
-        responsive: [
-            { breakpoint: 1024, settings: { slidesToShow: 2 } },
-            { breakpoint: 768, settings: { slidesToShow: 1 } },
-        ],
-    };
+  const settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    arrows: false,
+    responsive: [
+        {
+            breakpoint: 1024,
+            settings: {
+                slidesToShow: 2,
+            }
+        },
+        {
+            breakpoint: 768,
+            settings: {
+                slidesToShow: 1,
+                centerMode: true,      // centers the single card
+                centerPadding: "30px",  // removes extra padding on sides
+            }
+        }
+    ],
+};
+
+
     return (
         <section className='datanovel-leadership-section'>
             <div className="leadership-header text-center">
@@ -54,23 +58,27 @@ const DataNovelLeadership = () => {
                         </div>
                         <div className='datanovel-leadership-info'>
                             <h3>{member.project}</h3>
-                            <p><strong>{member.role}</strong></p>
                             <p>{member.description}</p>
                         </div>
                     </div>
                 ))}
             </Slider>
 
-            {/* Custom arrows below carousel */}
+            {/* Custom arrows using images */}
             <div className="custom-arrows-wrapper">
-                <button className="custom-arrow big-arrow" onClick={() => sliderRef.current.slickPrev()}>
-                    <FaArrowLeft size={50} className='leftarrow' />
+                <button
+                    className="custom-arrow prev-arrows"
+                    onClick={() => sliderRef.current.slickPrev()}
+                >
+                    <img src={leftarrow} alt="Previous" />
                 </button>
-                <button className="custom-arrow big-arrow" onClick={() => sliderRef.current.slickNext()}>
-                    <FaArrowRight size={50} />
+                <button
+                    className="custom-arrow next-arrows"
+                    onClick={() => sliderRef.current.slickNext()}
+                >
+                    <img src={rightarrow} alt="Next" />
                 </button>
             </div>
-
         </section>
     );
 };

@@ -1,0 +1,156 @@
+.business_goals_section {
+    padding: 60px 20px;
+    background: #F5F7FA;
+    position: relative;
+}
+
+.business_goals_section::before {
+    content: "";
+    position: absolute;
+    top: -60px;
+    right: 300px;
+    /* same alignment */
+    width: 50px;
+    height: 60px;
+    background: #F5F7FA;
+    z-index: 1;
+}
+
+.business_goals_section::after {
+    content: "";
+    position: absolute;
+    top: -60px;
+    right: 40px;
+    /* Second box */
+    width: 50px;
+    height: 60px;
+    background: #F5F7FA;
+    z-index: 1;
+}
+
+
+.extra-box.top-right {
+    position: absolute;
+    top: -100px;
+    right: 0px;
+    /* your new position */
+    width: 40px;
+    height: 40px;
+    background: #F5F7FA;
+    z-index: 1;
+}
+
+.business-right-section {
+    position: relative;
+}
+
+.business-right-section {
+  position: relative;
+}
+
+.business-right-section {
+    position: relative;
+}
+
+.cut-piece-below {
+    position: absolute;
+    width: 43px;       
+    height: 43px;      
+    background: #3F3D3DC2; 
+    top: 95%; 
+    right: 280px;
+    z-index: 1;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.business-goals-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    /* max-width: 1200px; */
+    /* margin: 0 auto; */
+    gap: 20px;
+}
+
+.business-left-section {
+    flex: 1.2 1 50%;
+}
+
+.business-left-section h2 {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #222;
+}
+
+.business-left-section p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #555;
+}
+
+.business-right-section {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.business-right-section img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 12px;
+    /* box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.1); */
+    cursor: pointer;
+}
+
+
+/* ✅ Responsive */
+@media (max-width: 992px) {
+    .business-goals-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .business-left-section h2 {
+        font-size: 28px;
+    }
+
+    .business-left-section p {
+        font-size: 16px;
+    }
+
+    .business-right-section {
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 576px) {
+    .business_goals_section {
+        padding: 40px 15px;
+    }
+
+    .business-left-section h2 {
+        font-size: 24px;
+    }
+
+    .business-left-section p {
+        font-size: 15px;
+    }
+}

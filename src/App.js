@@ -14,6 +14,8 @@ import ChatBot from "./components/chatbot/ChatBot";
 import PrivacyPolicy from "./components/privacyPolicy/PrivacyPolicy";
 import Faqs from "./components/faqs/Faqs";
 import AboutUs from "./pages/whoweare/aboutus/AboutUs";
+import DataArchitecture from "./pages/solutions/dataArchitecture/DataArchitecture";
+import DataEngineerings from "./pages/solutions/dataEngineerings/DataEngineerings";
 function App() {
   return (
     <HashRouter>
@@ -23,6 +25,9 @@ function App() {
       <Routes>
         <Route exact path="/" element={<Home/>}/>
         <Route exact path="/dataQuality" element={<DataQuality/>}/>
+        <Route exact path="/dataarchitecture" element={<DataArchitecture/>}/>
+        <Route exact path="/dataengineering" element={<DataEngineerings/>}/>
+
         <Route exact path="/casestudies" element={<CaseStudies/>}/>
         <Route exact path="/awardsandevents" element={<AwardsAndEvents/>}/>
         <Route exact path="/products" element={<Products/>}/>

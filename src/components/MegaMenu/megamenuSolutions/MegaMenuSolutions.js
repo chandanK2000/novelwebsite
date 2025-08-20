@@ -17,8 +17,8 @@ const MegaMenuSolutions = ({ closeMenus }) => {
         <div className="mega-block">
           <h6 className="mega-title">Technologies</h6>
           <ul className="mega-list list-unstyled">
-            <li><Link to="/data-architecture" onClick={closeMenus}>Data Architecture</Link></li>
-            <li><Link to="/data-engineering" onClick={closeMenus}>Data Engineering</Link></li>
+            <li><Link to="/dataarchitecture" onClick={closeMenus}>Data Architecture</Link></li>
+            <li><Link to="/dataengineering" onClick={closeMenus}>Data Engineering</Link></li>
             <li><Link to="/data-visualization" onClick={closeMenus}>Data Visualization</Link></li>
             <li><Link to="/ai" onClick={closeMenus}>AI</Link></li>
             <li><Link to="/dataQuality" onClick={closeMenus}>Data Quality</Link></li>

@@ -1,0 +1,179 @@
+.datanovel-innovation-section {
+    background: #F5F7FA;
+    padding: 40px 0px;
+    position: relative; 
+}
+
+/* Small rectangle overlap */
+.datanovel-innovation-section::before {
+    content: "";
+    position: absolute;
+    top: -30px;
+    left: 100px;    
+    width: 60px;
+    height: 60px; 
+    background: #F5F7FA;
+}
+
+
+.datanovel-innovation-section .heading_section h2 {
+    text-align: center;
+    margin: 10px 0px;
+    color: #3F3D3DC2;
+    font-size: 26px;
+    font-weight: 600;
+}
+
+.datanovel-innovation-section .heading_section p {
+    text-align: center;
+    margin: 10px 0px 30px;
+    color: #3F3D3DC2;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 26px;
+}
+
+.innovation-card {
+    background: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    cursor: pointer;
+    box-shadow: 0px 1px 2px 1px #00000040;
+    margin: 0px !important;
+    transition: transform 0.8s ease-in, box-shadow 0.3s ease;
+}
+
+.innovation-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.15);
+}
+
+.card-number {
+    color: #fff;
+    font-weight: 600;
+    font-size: 16px;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 5px;
+    background: linear-gradient(180deg, rgba(152, 213, 154, 0.65) 0%, rgba(28, 67, 29, 0.65) 100%);
+    box-shadow: 0px 1px 2px 1px #00000040;
+}
+
+.innovation-card h5 {
+    font-weight: 600;
+    color: #21A8FD;
+    font-size: 20px;
+}
+
+.innovation-item-description ul {
+    padding-left: 20px;
+    margin: 0;
+}
+
+.innovation-item-description ul li::marker {
+    color: #4CAF4F;
+    font-size: 1.2em;
+}
+
+.innovation-item-description ul li {
+    color: #4D4D4D;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 22px;
+}
+
+.innovation-item-description img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+/* Grid Layout */
+.innovation-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+}
+
+.left-column {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.right-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* Responsive */
+@media(max-width: 991px) {
+    .datanovel-innovation-section .heading_section h2 {
+        font-size: 22px;
+        line-height: 28px;
+    }
+
+    .datanovel-innovation-section .heading_section p {
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    .innovation-card h5 {
+        font-size: 18px;
+    }
+}
+
+@media(max-width: 767px) {
+    .innovation-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .right-column {
+        justify-content: flex-start;
+        margin-top: 20px;
+    }
+
+    .innovation-item-description img {
+        width: 80px;
+        height: 80px;
+    }
+}
+
+@media(max-width: 480px) {
+    .datanovel-innovation-section {
+        padding: 15px 10px;
+    }
+
+    .datanovel-innovation-section .heading_section h2 {
+        font-size: 20px;
+        line-height: 26px;
+    }
+
+    .datanovel-innovation-section .heading_section p {
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    .innovation-card {
+        padding: 15px;
+    }
+
+    .card-number {
+        width: 25px;
+        height: 25px;
+        font-size: 14px;
+    }
+
+    .innovation-item-description ul li {
+        font-size: 14px;
+        line-height: 20px;
+    }
+}
