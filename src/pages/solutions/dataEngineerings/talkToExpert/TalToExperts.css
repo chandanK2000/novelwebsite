@@ -1,0 +1,115 @@
+.experts-section {
+  padding: 40px 20px;
+  background:#02002B;
+}
+
+/* Main Container */
+.experts-container {
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+/* Left Content */
+.experts-content {
+  flex: 1 1 50%;
+}
+
+.experts-heading {
+  font-size: 28px;
+  font-weight: 700;
+  color: #fff;
+  line-height: 1.5;
+}
+
+.experts-heading span {
+  color: #757779;
+}
+
+/* Right Expert Card */
+.experts-card {
+  flex: 1 1 40%;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  background: #fff;
+  padding: 20px 25px;
+  border-radius: 16px;
+  box-shadow: 0px 6px 20px rgba(0,0,0,0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.experts-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0px 10px 25px rgba(0,0,0,0.12);
+}
+
+/* Expert Image */
+.experts-image {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+/* Expert Info */
+.experts-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.experts-name {
+  font-size: 18px;
+  font-weight: 600;
+  margin: 0;
+  color: #222;
+}
+
+.experts-role {
+  font-size: 14px;
+  color: #555;
+  margin: 4px 0 12px;
+}
+
+/* Button */
+.experts-btn {
+  background: #0073e6;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 600;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.experts-btn:hover {
+  background: #005bb5;
+}
+
+.experts-link-section .experts-link {
+    color: #fff;
+    margin: 0px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+/* Responsive */
+@media (max-width: 992px) {
+  .experts-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .experts-card {
+    justify-content: center;
+  }
+
+  .experts-content {
+    margin-bottom: 30px;
+  }
+}

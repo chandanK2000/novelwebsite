@@ -1,0 +1,190 @@
+.our-core-offerings {
+    padding: 40px 30px;
+    background-color: #F5F7FA;
+    /* margin: 0px 30px; */
+}
+
+.our-core-offerings h2 {
+    font-size: 36px;
+    font-weight: 700;
+    color: #3F3D3DC2;
+}
+
+/* Tabs */
+.offerings-tabs {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    margin-bottom: 20px;
+}
+
+.offerings-tab {
+    cursor: pointer;
+    padding: 10px 12px;
+    font-size: 16px;
+    background: none;
+    border: none;
+    outline: none;
+    position: relative;
+    color: #3F3D3DC2;
+    flex: 0 0 auto;
+    /* ensures proper width when scrollable */
+    white-space: nowrap;
+}
+
+.offerings-tab:hover {
+    color: #28a745;
+}
+
+.offerings-tab.active {
+    color: #28a745;
+}
+
+.offerings-tab.active::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #28a745;
+}
+
+/* Tab Content */
+.tab-content-custom {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.tab-image {
+    flex: 1 1 300px;
+    /* text-align: center; */
+}
+
+.tab-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.tab-details {
+    flex: 1 1 60%;
+}
+
+.tab-details h3 {
+    font-size: 20px;
+    margin-bottom: 15px;
+    font-weight: bold;
+    color: #3F3D3DC2;
+}
+
+.tab-details p {
+    font-size: 16px;
+    margin-bottom: 20px;
+    color: #04275B;
+}
+
+.tab-details ul {
+    list-style: disc;
+    padding: 0;
+}
+.tab-details ul li{
+    color: red;
+}
+
+.tab-details ul li h5 {
+    color: #242323c2;
+}
+
+.tab-details ul li p {
+    color: #3F3D3DC2;
+}
+
+
+
+
+
+/* Responsive */
+@media (max-width: 992px) {
+    .tab-content-custom {
+        flex-direction: column;
+    }
+
+    .tab-details {
+        text-align: center;
+        margin-top: 20px;
+    }
+}
+
+/* Small Devices (scrollable tabs) */
+@media (max-width: 768px) {
+    .offerings-tabs {
+        flex-wrap: nowrap;
+        overflow-x: scroll; /* Always show scrollbar */
+        scrollbar-width: thin; /* For Firefox */
+    }
+
+    /* Firefox scrollbar colors */
+    .offerings-tabs {
+        scrollbar-color: #ccc #f0f0f0; /* thumb + track */
+    }
+
+    /* WebKit (Chrome, Edge, Safari) */
+    .offerings-tabs::-webkit-scrollbar {
+        height: 6px; /* Adjust thickness */
+    }
+
+    .offerings-tabs::-webkit-scrollbar-track {
+        background: #f0f0f0; /* Always visible track */
+    }
+
+    .offerings-tabs::-webkit-scrollbar-thumb {
+        background: #ccc;
+        border-radius: 4px;
+    }
+
+    .offerings-tab {
+        flex: 0 0 auto;
+        white-space: nowrap;
+    }
+
+    .offerings-tab.active::after {
+        content: none;
+    }
+}
+
+
+@media (max-width: 576px) {
+    .our-core-offerings h2 {
+        font-size: 28px;
+    }
+
+    .tab-details h3 {
+        font-size: 24px;
+        text-align: left !important;
+        margin: 0 !important;
+    }
+
+    .tab-details ul {
+        padding-left: 20px !important;
+        /* add space for bullets */
+        margin: 0;
+        list-style-type: disc !important;
+        list-style-position: outside !important;
+        text-align: left !important;
+    }
+
+    .tab-details ul li {
+        /* padding: 2px 0; */
+        text-align: left !important;
+        margin: 0px !important;
+    }
+     .tab-image img {
+        max-width: 90%;   /* shrink to 70% of container */
+        margin: 0 auto;  
+        display: block;
+        height: auto;
+    }
+}

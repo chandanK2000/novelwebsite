@@ -7,7 +7,7 @@ const BusinessGoals = () => {
             <div className="extra-box top-right"></div>  {/* New box */}
 
 
-            <div className='business-goals-content d-flex'>
+            <div className='business-goals-content'>
                 <div className='business-left-section'>
                     <h2>Achieve business goals with data masters</h2>
                     <p>

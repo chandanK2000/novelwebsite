@@ -1,0 +1,174 @@
+.meet-our-results-section {
+    padding: 40px 20px;
+    background: #fff;
+    margin: auto;
+}
+
+/* ===== HEADER ===== */
+.results-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 0px;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.results-header h2 {
+    font-size: 32px;
+    font-weight: 700;
+    color: #3F3D3DC2;
+    line-height: 28px;
+}
+
+.discover-btn {
+    background: #BE0000;
+    color: #fff;
+    padding: 8px 12px;
+    border: none;
+    cursor: pointer;
+    font-weight: 500;
+    border-radius: 4px;
+    transition: 0.3s ease;
+}
+
+.discover-btn:hover {
+    background: #a50000;
+}
+
+/* ===== GRID ===== */
+.results-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    cursor: pointer;
+}
+
+.result-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 420px;
+    padding: 12px;
+    border-radius: 8px;
+    background: #fff;
+    box-shadow: 0 2px 1px rgba(0, 0, 0, 0.08);
+}
+
+
+
+.result-card img {
+    width: 100%;
+    margin-bottom: 15px;
+    border-radius: 2px;
+}
+
+.result-card h3 {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: #3F3D3DC2;
+}
+
+.result-card p {
+    font-size: 15px;
+    color: #04275B;
+    font-weight: 400;
+    flex-grow: 1;
+}
+
+/* Bottom section wrapper */
+.result-footer {
+    margin-top: auto;
+}
+
+.company {
+    background: #7D7A7A;
+    color: #fff;
+    padding: 5px 12px;
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 12px;
+    display: inline-block;
+    border-radius: 4px;
+}
+
+.project-btn {
+    background: none;
+    color: #3F3D3DC2;
+    border: none;
+    padding: 0px;
+    font-weight: 500;
+    cursor: pointer;
+    text-align: left;
+    transition: color 0.3s ease;
+}
+
+.project-btn:hover {
+    color: #BE0000;
+}
+
+/* ===== RESPONSIVE ===== */
+
+/* Tablets */
+@media (max-width: 992px) {
+    .results-header h2 {
+        font-size: 28px;
+    }
+
+    .result-card {
+        min-height: 380px;
+    }
+}
+
+/* Small tablets / large phones */
+@media (max-width: 768px) {
+    .results-header {
+        flex-direction: column;
+        align-items: flex-start;
+        margin: 10px 0 20px;
+    }
+
+    .results-header h2 {
+        font-size: 24px;
+    }
+
+    .discover-btn {
+        align-self: flex-start;
+    }
+
+    .result-card {
+        min-height: 360px;
+    }
+
+
+
+}
+
+.results-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    /* allows stacking on small screens */
+}
+
+/* Phones */
+@media (max-width: 576px) {
+    .results-header {
+
+        display: block !important;
+        text-align: center;
+    }
+
+    .results-header h2 {
+        font-size: 22px;
+        line-height: 1.4;
+        margin-bottom: 10px;
+    }
+
+    .discover-btn {
+        font-size: 14px;
+        padding: 6px 16px;
+    }
+}

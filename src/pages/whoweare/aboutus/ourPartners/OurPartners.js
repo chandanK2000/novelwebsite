@@ -7,13 +7,13 @@ import logo4 from '../../../../assets/icons/Logo4.png'
 import logo5 from '../../../../assets/icons/Logo5.png'
 import logo6 from '../../../../assets/icons/Logo6.png'
 
-const OurPartners = () => {
+const OurPartners = ({heading}) => {
     return (
         <section className="partners-section">
             <div className="partners-container">
 
                 <div className="partners-text">
-                    <h3 className="partners-heading">DataNovel Visionary Partners</h3>
+                    <h3 className="partners-heading">{heading ? heading : 'DataNovel Visionary Partners'}</h3>
                 </div>
 
                 <div className="partners-logos">
