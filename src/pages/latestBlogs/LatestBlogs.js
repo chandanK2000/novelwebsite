@@ -41,10 +41,10 @@ const blogData = {
   ],
 };
 
-const LatestBlogs = () => {
+const LatestBlogs = ({heading}) => {
   return (
     <section className='latestblogs_section'>
-      <h3 className='section-title'>Latest from the Blog</h3>
+      <h3 className='section-title'>{heading ? heading : 'Latest from the Blog'}</h3>
 
       <div className='blogs-wrapper'>
         {/* Featured blog */}

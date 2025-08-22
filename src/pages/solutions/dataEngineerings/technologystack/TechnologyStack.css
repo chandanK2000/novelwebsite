@@ -1,0 +1,118 @@
+.technology-stack {
+  padding: 40px;
+  background: rgba(2, 0, 43, 1);
+}
+
+/* Header */
+.technology-stack__header {
+  margin: 0 40px;
+}
+
+.technology-stack__title {
+  font-size: 32px;
+  font-weight: 700;
+  color: rgba(255, 255, 255, 1);
+  margin-bottom: 10px;
+}
+
+.technology-stack__description {
+  font-size: 16px;
+  color: rgba(240, 240, 240, 1);
+  line-height: 1.5;
+  max-width: 800px;
+}
+
+/* Container */
+.technology-stack__container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+/* Item */
+.technology-stack__item {
+  padding: 25px 45px;
+  cursor: pointer;
+  text-align: left;
+  transition: transform 0.3s ease;
+}
+
+.technology-stack__item:hover {
+  transform: translateY(-5px);
+}
+
+.technology-stack__icon {
+  width: 40px;
+  height: 40px;
+  margin-bottom: 15px;
+}
+
+.technology-stack__item-title {
+  font-size: 18px;
+  font-weight: 700;
+  color: rgba(239, 239, 239, 1);
+  margin-bottom: 8px;
+  line-height: 25px;
+}
+
+.technology-stack__item-description {
+  font-size: 14px;
+  color: rgba(239, 239, 239, 1);
+  line-height: 22px;
+  font-weight: 400;
+}
+
+/* ✅ Responsive Styles */
+
+/* Tablets (≤1024px) → 2 columns */
+@media (max-width: 1024px) {
+  .technology-stack__container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .technology-stack__title {
+    font-size: 28px;
+  }
+
+  .technology-stack__description {
+    font-size: 15px;
+  }
+}
+
+/* Mobile (≤768px) → 1 column */
+@media (max-width: 768px) {
+  .technology-stack {
+    padding: 30px 20px;
+  }
+
+  .technology-stack__header {
+    margin: 0 20px 20px;
+    text-align: center;
+  }
+
+  .technology-stack__container {
+    grid-template-columns: 1fr;
+  }
+
+  .technology-stack__item {
+    padding: 20px;
+    /* text-align: center; */
+    border: 1px solid rgba(255, 255, 255, 0.1);
+  }
+
+  .technology-stack__icon {
+    margin: 0 auto 15px;
+  }
+
+  .technology-stack__title {
+    font-size: 24px;
+  }
+
+  .technology-stack__item-title {
+    font-size: 16px;
+  }
+
+  .technology-stack__item-description {
+    font-size: 13px;
+  }
+}

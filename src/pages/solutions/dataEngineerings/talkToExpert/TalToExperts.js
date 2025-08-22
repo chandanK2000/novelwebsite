@@ -2,6 +2,7 @@ import React from 'react';
 import './TalToExperts.css';
 import expertDataEngineer from '../../../../assets/images/expertDataEngineer.png';
 import { Link } from 'react-router-dom';
+import  contactarrow from '../../../../assets/icons/contactArrow.png'
 
 const TalToExperts = () => {
     return (
@@ -25,7 +26,7 @@ const TalToExperts = () => {
                     </div>
                 </div>
                 <div className='experts-link-section'>
-                    <Link to='/talk-to-expert' className='experts-link'>Talk to expert – It’s free</Link>
+                    <Link to='/talk-to-expert' className='experts-link'>Talk to expert – It’s free <img src={contactarrow} alt='Contact Arrow' className='contact-arrow' /></Link>
                 </div>
             </div>
 

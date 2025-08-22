@@ -1,0 +1,15 @@
+.top-scroll-indicator {
+  position: fixed;
+ top: 70px;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background-color: #e01f1f;
+  z-index: -999999;
+}
+
+.top-scroll-bar {
+  height: 100%;
+  background-color: #151616;
+  transition: width 0.1s ease-out;
+}

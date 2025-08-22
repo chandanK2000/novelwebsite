@@ -1,0 +1,56 @@
+.data-engineering-banner {
+    padding: 100px 20px;
+    color: #fff;
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRaBQnfOtnfAq69YEVbZzuyBggcocRi4Ipphg&s');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    position: relative;
+}
+
+.data-engineering-banner::after {
+    content: "";
+    position: absolute;
+    bottom: -60px;
+    right: 350px;
+    width: 50px;
+    height: 60px;
+    background: #0857d6;
+    z-index: 2;
+}
+.banner-content h2 {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #FFFFFF;
+}
+
+.banner-content p {
+    font-size: 20px;
+    /* max-width: 700px; */
+    color: #F5F7FA;
+}
+
+@media (max-width: 576px) {
+    .data-engineering-banner {
+        padding: 100px 20px 30px;
+    }
+
+    .data-engineering-banner::after {
+        right: 20px;
+    }
+
+    .banner-content h2 {
+        font-size: 28px;
+    }
+
+    .banner-content p {
+        font-size: 18px;
+    }
+
+    .data-engineering-banner::after {
+        display: none;
+    }
+}

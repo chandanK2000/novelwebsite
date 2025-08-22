@@ -1,0 +1,80 @@
+.header-container {
+  box-shadow: 0px 2.78px 5.57px 0px #ABBED166;
+  background: #FFFFFF;
+
+}
+
+.register_button {
+  /* background: #4CAF4F; */
+  background: linear-gradient(135deg, #4CAF4F, #2f2e7d);
+  /* Green gradient */
+  padding: 9.74px 22.27px 9.74px 22.27px;
+  color: #FFFFFF;
+  border: none;
+}
+
+.register_button:hover {
+  background: linear-gradient(135deg, #4CAF4F, #0a0a0a);
+}
+
+.navbar-nav {
+  align-items: center;
+  justify-content: space-between;
+  gap: 16.71px;
+  background-color: #ffffff;
+  opacity: 1;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link:focus {
+  border-bottom: 1px solid #4CAF4F;
+  color: #4CAF4F;
+  transition: border-bottom 0.8s ease-in;
+}
+
+/* Make collapse slide in from left */
+@media (max-width: 768px) {
+  .navbar-collapse {
+    position: fixed;
+    top: 0px;
+    left: -100%;
+    height: 100vh;
+    width: 250px;
+    background-color: #fff;
+    padding: 90px 20px 20px;
+    transition: left 0.3s ease-in-out;
+    z-index: -9999;
+    box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1);
+    overflow: auto;
+  }
+
+  /* When menu is open, move it into view */
+  .navbar-collapse.show {
+    left: 0;
+
+  }
+
+  .navbar-nav {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+  }
+
+  .navbar-toggler {
+    z-index: 1100;
+  }
+
+  /* Clean hamburger icon (no shadow or border) */
+  .navbar-toggler {
+    border: none !important;
+    box-shadow: none !important;
+    z-index: 1100;
+  }
+
+  .navbar-toggler:focus {
+    outline: none !important;
+    box-shadow: none !important;
+  }
+}
