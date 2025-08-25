@@ -12,6 +12,8 @@ import TalToExperts from './talkToExpert/TalToExperts';
 import LatestBlogs from '../../latestBlogs/LatestBlogs';
 import DataEngineeringLatestBlogs from './dataengineeringLatesBlogs/DataEngineeringLatestBlogs';
 import TechnologyStack from './technologystack/TechnologyStack';
+import WorkTogethers from './workTogether/WorkTogethers';
+import DataFaq from './DataFaq';
 const DataEngineerings = () => {
   return (
     <div>
@@ -26,6 +28,8 @@ const DataEngineerings = () => {
       <TalToExperts/>
       <DataEngineeringLatestBlogs/>
       <TechnologyStack/>
+      <WorkTogethers/>
+      <DataFaq/>
     </div>
   )
 }

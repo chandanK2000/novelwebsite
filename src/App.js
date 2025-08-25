@@ -16,6 +16,7 @@ import Faqs from "./components/faqs/Faqs";
 import AboutUs from "./pages/whoweare/aboutus/AboutUs";
 import DataArchitecture from "./pages/solutions/dataArchitecture/DataArchitecture";
 import DataEngineerings from "./pages/solutions/dataEngineerings/DataEngineerings";
+import Blogs from "./pages/blogs/Blogs";
 function App() {
   return (
     <HashRouter>
@@ -25,8 +26,8 @@ function App() {
       <Routes>
         <Route exact path="/" element={<Home/>}/>
         <Route exact path="/dataQuality" element={<DataQuality/>}/>
-        <Route exact path="/dataarchitecture" element={<DataArchitecture/>}/>
-        <Route exact path="/dataengineering" element={<DataEngineerings/>}/>
+        <Route exact path="/data-architecture" element={<DataArchitecture/>}/>
+        <Route exact path="/data-engineering" element={<DataEngineerings/>}/>
 
         <Route exact path="/casestudies" element={<CaseStudies/>}/>
         <Route exact path="/awardsandevents" element={<AwardsAndEvents/>}/>
@@ -35,6 +36,7 @@ function App() {
         <Route exact path="/privacypolicy" element={<PrivacyPolicy/>}/>
         <Route exact path="/faqs" element={<Faqs/>}/>
         <Route exact path="/aboutus" element={<AboutUs/>}/>
+        <Route exact path="/blogs" element={<Blogs/>}/>
 
 
 

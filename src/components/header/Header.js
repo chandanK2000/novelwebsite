@@ -10,44 +10,8 @@ const Header = () => {
   const sidebarRef = useRef(null);
 
   // 🔸 Close sidebar when clicking outside (on small devices)
-useEffect(() => {
-  const clearDropdowns = () => {
-    document.querySelectorAll('.dropdown-menu.show').forEach(menu => {
-      menu.classList.remove('show');
-    });
-
-    document.querySelectorAll('.dropdown-toggle[aria-expanded="true"]').forEach(toggle => {
-      toggle.setAttribute('aria-expanded', 'false');
-    });
-  };
-
-  // Close dropdowns on initial load
-  clearDropdowns();
-
-  // Close dropdowns on resize
-  const handleResize = () => clearDropdowns();
-  window.addEventListener('resize', handleResize);
-
-  return () => window.removeEventListener('resize', handleResize);
-}, []);
-
-
-useEffect(() => {
-  const handleOutsideClick = (event) => {
-    const sidebar = document.querySelector('.navbar-collapse.show');
-    const toggler = document.querySelector('.navbar-toggler');
-    const nav = document.getElementById('mainNav');
-
-    // If sidebar is open, and click is outside the sidebar AND not on the toggler
-    if (
-      sidebar &&
-      nav &&
-      !nav.contains(event.target) &&
-      !toggler.contains(event.target)
-    ) {
-      sidebar.classList.remove('show');
-
-      // Also close dropdowns if any
+  useEffect(() => {
+    const clearDropdowns = () => {
       document.querySelectorAll('.dropdown-menu.show').forEach(menu => {
         menu.classList.remove('show');
       });
@@ -55,14 +19,50 @@ useEffect(() => {
       document.querySelectorAll('.dropdown-toggle[aria-expanded="true"]').forEach(toggle => {
         toggle.setAttribute('aria-expanded', 'false');
       });
-    }
-  };
+    };
 
-  document.addEventListener('click', handleOutsideClick);
-  return () => {
-    document.removeEventListener('click', handleOutsideClick);
-  };
-}, []);
+    // Close dropdowns on initial load
+    clearDropdowns();
+
+    // Close dropdowns on resize
+    const handleResize = () => clearDropdowns();
+    window.addEventListener('resize', handleResize);
+
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
+
+
+  useEffect(() => {
+    const handleOutsideClick = (event) => {
+      const sidebar = document.querySelector('.navbar-collapse.show');
+      const toggler = document.querySelector('.navbar-toggler');
+      const nav = document.getElementById('mainNav');
+
+      // If sidebar is open, and click is outside the sidebar AND not on the toggler
+      if (
+        sidebar &&
+        nav &&
+        !nav.contains(event.target) &&
+        !toggler.contains(event.target)
+      ) {
+        sidebar.classList.remove('show');
+
+        // Also close dropdowns if any
+        document.querySelectorAll('.dropdown-menu.show').forEach(menu => {
+          menu.classList.remove('show');
+        });
+
+        document.querySelectorAll('.dropdown-toggle[aria-expanded="true"]').forEach(toggle => {
+          toggle.setAttribute('aria-expanded', 'false');
+        });
+      }
+    };
+
+    document.addEventListener('click', handleOutsideClick);
+    return () => {
+      document.removeEventListener('click', handleOutsideClick);
+    };
+  }, []);
 
   // 🔸 Helper to close mega menus + sidebar
   const closeMenus = () => {
@@ -129,7 +129,7 @@ useEffect(() => {
                   data-bs-toggle="dropdown"
                   aria-expanded="false"
                 >
-                  Solutions
+                  Services
                 </a>
                 <MegaMenuSolutions closeMenus={closeMenus} />
               </li>
@@ -150,12 +150,32 @@ useEffect(() => {
               </li>
 
               {/* Products */}
-              <li className="nav-item">
-                <Link className="nav-link" to="/products" onClick={closeMenus}>Products</Link>
+              {/* <li className="nav-item">
+                <Link className="nav-link" to="/products" onClick={closeMenus}>Solutions</Link>
+              </li> */}
+
+              <li className="nav-item dropdown">
+                <a
+                  className="nav-link dropdown-toggle"
+                  href="#"
+                  id="blogsDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Solutions
+                </a>
+                <ul className="dropdown-menu" aria-labelledby="blogsDropdown">
+                  <li><a className="dropdown-item" href="#" onClick={closeMenus}>Data Quality</a></li>
+                  <li><a className="dropdown-item" href="#" onClick={closeMenus}>Data Migration</a></li>
+                  <li><hr className="dropdown-divider" /></li>
+                  <li><a className="dropdown-item" href="#" onClick={closeMenus}>Video Analytics</a></li>
+                </ul>
               </li>
 
+
               {/* Blogs */}
-              <li className="nav-item dropdown">
+              {/* <li className="nav-item dropdown">
                 <a
                   className="nav-link dropdown-toggle"
                   href="#"
@@ -172,7 +192,19 @@ useEffect(() => {
                   <li><hr className="dropdown-divider" /></li>
                   <li><a className="dropdown-item" href="#" onClick={closeMenus}>Something else</a></li>
                 </ul>
+              </li> */}
+
+              {/* Blogs - Single Link */}
+              <li className="nav-item">
+                <Link
+                  className="nav-link"
+                  to="/blogs"
+                  onClick={closeMenus}
+                >
+                  Blogs
+                </Link>
               </li>
+
 
               {/* Contact Us / Register */}
               <li className="nav-item">

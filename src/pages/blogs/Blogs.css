@@ -1,0 +1,82 @@
+.blogs-section {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 80px 20px;
+}
+
+.blogs-section h2 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+  font-weight: bold;
+  color: #333;
+}
+
+.blogs-section .d-flex {
+  display: flex;
+  align-items: flex-start;      /* keeps search box fixed at top */
+  justify-content: space-between;
+  gap: 40px;
+  flex-wrap: wrap;              /* stack on small screens */
+}
+
+/* Left side image column */
+.blogs-section .d-flex > div:first-child {
+  flex: 1;
+  min-width: 320px;             /* ensures responsive */
+  max-width: 600px;
+}
+
+.blogs-section img {
+  display: block;
+  width: 100%;                  /* full width image */
+  height: auto;                 /* maintain ratio */
+  border-radius: 12px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Right side content */
+.blogs-section .d-flex > div:last-child {
+  flex: 1;
+  min-width: 280px;
+
+}
+
+.blogs-section input[type="search"] {
+  width: 100%;
+  padding: 8px 14px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  outline: none;
+  transition: 0.2s;
+  margin-bottom: 20px;
+}
+
+.blogs-section input[type="search"]:focus {
+  border-color: #007bff;
+  box-shadow: 0px 0px 6px rgba(0, 123, 255, 0.4);
+}
+
+.blogs-section h4 {
+  font-size: 1.2rem;
+  margin-bottom: 15px;
+  color: #222;
+}
+
+.blogs-section ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  min-height: 200px;
+}
+
+.blogs-section ul li {
+  padding: 0px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+/* 
+.blogs-section ul li:hover {
+  background: #007bff;
+  color: #fff;
+} */
