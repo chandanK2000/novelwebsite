@@ -4,10 +4,15 @@
 // import techimage3 from '../../assets/images/herobanner3.jpg';
 // import agenticAi from '../../assets/images/agenticAi.jpg';
 
-import heroBanners1 from '../../assets/images/heroBanners1.jpg';
-import heroBanners2 from '../../assets/images/heroBanners2.jpg';
-import heroBanners3 from '../../assets/images/heroBanners3.jpg';
-import heroBanners4 from '../../assets/images/heroBanners4.jpg';
+// import heroBanners1 from '../assets/images/heroBanners1.jpg';
+// import heroBanners2 from '../../assets/images/heroBanners2.jpg';
+// import heroBanners3 from '../../assets/images/heroBanners3.jpg';
+// import heroBanners4 from '../../assets/images/heroBanners4.jpg';
+
+import heroBanners1 from '../../../assets/images/heroBanners1.jpg';
+import heroBanners2 from '../../../assets/images/heroBanners2.jpg';
+import heroBanners3 from '../../../assets/images/heroBanners3.jpg';
+import heroBanners4 from '../../../assets/images/heroBanners4.jpg';
 
 const heroSlides = [
   {

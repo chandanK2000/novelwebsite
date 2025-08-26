@@ -1,5 +1,6 @@
 import React from 'react'
-import LatestBlogs from '../../../latestBlogs/LatestBlogs';
+import LatestBlogs from '../../../home/latestBlogs/LatestBlogs';
+// import LatestBlogs from '../../../latestBlogs/LatestBlogs';
 
 const DataEngineeringLatestBlogs = () => {
   return (

@@ -1,15 +1,18 @@
 import React from 'react';
 import './OurClients.css'
-import logo1 from '../../assets/icons/Logo1.png'
-import logo2 from '../../assets/icons/Logo2.png'
-import logo3 from '../../assets/icons/Logo3.png'
-import logo4 from '../../assets/icons/Logo4.png'
-import logo5 from '../../assets/icons/Logo5.png'
-import logo6 from '../../assets/icons/Logo6.png'
-import icon1 from '../../assets/icons/icon1.png'
-import icon2 from '../../assets/icons/icon2.png'
-import icon3 from '../../assets/icons/icon3.png'
+import logo1 from '../../../assets/icons/Logo1.png'
+import logo2 from '../../../assets/icons/Logo2.png'
+import logo3 from '../../../assets/icons/Logo3.png'
+import logo4 from '../../../assets/icons/Logo4.png'
+import logo5 from '../../../assets/icons/Logo5.png'
+import logo6 from '../../../assets/icons/Logo6.png'
+import icon1 from '../../../assets/icons/icon1.png'
+import icon2 from '../../../assets/icons/icon2.png'
+import icon3 from '../../../assets/icons/icon3.png'
 
+// import logo1 from '../../../assets/icons/Logo1.png'
+// import logo2 from '../../../assets/icons/Logo2.png'
+// import logo3 from '../../../assets/icons/Logo3.png'
 
 const OurClients = () => {
     return (

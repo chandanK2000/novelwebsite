@@ -9,11 +9,11 @@ import SelectedClients from './selectedClients/SelectedClients';
 import BusinessSupport from './businessSupport/BusinessSupport';
 import DigitalTransformation from './digitalTransformation/DigitalTransformation';
 import TalToExperts from './talkToExpert/TalToExperts';
-import LatestBlogs from '../../latestBlogs/LatestBlogs';
 import DataEngineeringLatestBlogs from './dataengineeringLatesBlogs/DataEngineeringLatestBlogs';
 import TechnologyStack from './technologystack/TechnologyStack';
 import WorkTogethers from './workTogether/WorkTogethers';
 import DataFaq from './DataFaq';
+
 const DataEngineerings = () => {
   return (
     <div>

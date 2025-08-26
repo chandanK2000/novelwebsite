@@ -1,9 +1,9 @@
 import React from 'react';
 import './TechnologiesWork.css';
-import techimage1 from '../../assets/images/techimage1.png'
-import techimage2 from '../../assets/images/techimage2.png'
-import techimage3 from '../../assets/images/techimage3.png'
-import techimage4 from '../../assets/images/techimage4.png'
+import techimage1 from '../../../assets/images/techimage1.png'
+import techimage2 from '../../../assets/images/techimage2.png'
+import techimage3 from '../../../assets/images/techimage3.png'
+import techimage4 from '../../../assets/images/techimage4.png'
 
 const TechnologiesWork = () => {
   return (

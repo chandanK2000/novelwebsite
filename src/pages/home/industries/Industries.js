@@ -1,11 +1,11 @@
 import React from 'react';
 import './Industries.css';
-import finance from '../../assets/images/finance.png';
-import ecommerce from '../../assets/images/e-commerce.png';
-import technology from '../../assets/images/technology.png';
-import education from '../../assets/images/education.png';
-import manufacturing from '../../assets/images/manufacturing.png';
-import healthcare from '../../assets/images/health-care.png';
+import finance from '../../../assets/images/finance.png';
+import ecommerce from '../../../assets/images/e-commerce.png';
+import technology from '../../../assets/images/technology.png';
+import education from '../../../assets/images/education.png';
+import manufacturing from '../../../assets/images/manufacturing.png';
+import healthcare from '../../../assets/images/health-care.png';
 import { FaArrowRight } from 'react-icons/fa';
 
 const Industries = () => {

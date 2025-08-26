@@ -1,0 +1,139 @@
+.awards-process-section {
+    position: relative;
+    padding: 80px 40px;
+    background: #fff;
+    overflow: hidden !important;
+
+
+}
+
+.awards-process-section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: url('../../../assets/images/tropheelefttop.png'),
+        url('../../../assets/images/tropheerighttop.png'),
+        url('../../../assets/images/tropheebottomright.png');
+
+    background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
+    background-size: 230px, 230px, 230px, 230px;
+    background-position: 0px -180px, top right, bottom right, bottom left;
+    pointer-events: none;
+    z-index: 0;
+}
+
+
+/* Keep your content above the image */
+.awards-process-container {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+
+.awards-process-item {
+    padding: 4px 8px;
+    border-radius: 8px;
+    box-shadow: 0px 1.39px 2.78px 0px rgba(171, 190, 209, 0.2);
+    cursor: pointer;
+    margin: 0px !important;
+}
+
+.awards-process-column {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.awards-process-item h3 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 8px;
+    color: rgba(189, 178, 55, 1);
+}
+
+.awards-process-item p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: rgba(113, 113, 113, 1);
+}
+
+.awards-process-image {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.awards-process-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 12px;
+}
+
+/* ✅ Tablet screens */
+@media (max-width: 1024px) {
+    .awards-process-container {
+        gap: 25px;
+    }
+
+    .awards-process-item h3 {
+        font-size: 1.3rem;
+    }
+
+    .awards-process-item p {
+        font-size: 0.95rem;
+    }
+}
+
+/* ✅ Mobile screens */
+@media (max-width: 768px) {
+
+
+    .awards-process-section::before {
+        content: none;
+
+    }
+
+    .awards-process-container {
+        flex-direction: column;
+    }
+
+    .awards-process-column {
+        align-items: center;
+    }
+
+    .awards-process-image {
+        margin-bottom: 20px;
+    }
+
+    .awards-process-item h3 {
+        font-size: 1.2rem;
+    }
+
+    .awards-process-item p {
+        font-size: 0.9rem;
+    }
+}
+
+/* ✅ Small Mobile (iPhone SE, etc.) */
+@media (max-width: 480px) {
+    .awards-process-section {
+        padding: 50px 20px;
+    }
+
+    .awards-process-item h3 {
+        font-size: 1rem;
+    }
+
+    .awards-process-item p {
+        font-size: 0.85rem;
+    }
+}

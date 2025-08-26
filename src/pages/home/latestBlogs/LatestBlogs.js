@@ -2,10 +2,10 @@ import React from 'react';
 import './LatestBlogs.css';
 import { FaArrowRight } from 'react-icons/fa';
 
-import blog1 from '../../assets/images/blog1.png';
-import blog2 from '../../assets/images/blog2.png';
-import blog3 from '../../assets/images/blog3.png';
-import blogs4 from '../../assets/images/blogs4.png';
+import blog1 from '../../../assets/images/blog1.png';
+import blog2 from '../../../assets/images/blog2.png';
+import blog3 from '../../../assets/images/blog3.png';
+import blogs4 from '../../../assets/images/blogs4.png';
 
 const blogData = {
   featured: {
