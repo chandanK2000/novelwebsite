@@ -23,3 +23,25 @@ body {
   scroll-behavior: smooth;
 
 }
+
+
+.partners-header {
+    margin-bottom: 30px; /* spacing between header and logos */
+}
+
+.partners-title {
+    font-size: 2rem;
+    font-weight: 600;
+    color: rgba(77, 77, 77, 1);
+}
+
+.partners-description {
+    font-size: 1rem;
+    color: rgba(113, 113, 113, 1);
+    margin-top: 10px; 
+}
+
+.leadership-header .leadership-title,
+.leadership-header .leadership-description{
+  color: rgba(217, 217, 217, 1);
+}

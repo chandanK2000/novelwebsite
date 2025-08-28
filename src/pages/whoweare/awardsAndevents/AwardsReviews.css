@@ -1,0 +1,100 @@
+.awards-reviews-section {
+    padding: 40px 20px;
+    background: rgba(245, 247, 250, 1);
+}
+
+.awards-reviews-title {
+    font-size: 28px;
+    margin-bottom: 20px;
+    font-weight: bold;
+    color: rgba(77, 77, 77, 1);
+}
+
+.awards-reviews-testimonials {
+    display: flex;
+    gap: 20px;
+    justify-content: space-evenly;
+}
+
+.awards-reviews-card {
+    border: 1px solid #000000;
+    padding: 10px;
+    border-radius: 4px;
+    box-shadow: 0 2px 1px rgba(0, 0, 0, 0.1);
+    min-height: 200px;
+    min-width: 300px;
+    flex: 1;
+}
+
+.awards-reviews-text {
+    font-size: 16px;
+    color: #4D4D4D;
+    margin-bottom: 15px;
+    line-height: 1.6;
+}
+
+.awards-reviews-footer p {
+    margin: 0px;
+}
+
+.awards-reviews-author {
+    font-weight: bold;
+    color: #4D4D4D;
+    margin-bottom: 5px;
+}
+
+.awards-reviews-role {
+    font-size: 14px;
+    color: #4D4D4D;
+}
+
+.carousel-controls {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.carousel-controls button {
+    width: 40px;
+    height: 40px;
+    background-color: rgba(63, 61, 61, 0.76);
+    border: none;
+    border-radius: 50%;
+    color: white;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    gap: 10px;
+    margin: 5px;
+    padding: 10px;
+    font-size: 20px;
+    box-shadow: 2px 2px 1px rgba(0, 0, 0, 0.1);
+}
+
+
+/* Responsive for tablets and below */
+@media (max-width: 992px) {
+    .awards-reviews-testimonials {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .awards-reviews-card {
+        flex: 1 1 45%;
+        max-width: 45%;
+    }
+}
+
+/* Responsive for mobile */
+@media (max-width: 576px) {
+    .awards-reviews-testimonials {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .awards-reviews-card {
+        width: 100%;
+        max-width: 100%;
+    }
+}

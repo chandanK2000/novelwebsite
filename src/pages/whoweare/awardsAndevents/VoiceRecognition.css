@@ -1,0 +1,205 @@
+.voice-recognition-section {
+    padding: 0px 40px;
+    background: #fff;
+}
+
+/* Heading */
+.voice-recognition-header {
+    max-width: 800px;
+}
+
+.voice-recognition-header h2 {
+    font-size: 30px;
+    font-weight: 700;
+    color: rgba(77, 77, 77, 1);
+    line-height: 25px;
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+.voice-recognition-header p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: rgba(77, 77, 77, 1);
+    text-align: left;
+    font-weight: 400;
+    padding-bottom: 10px;   /* space between text and border */
+    border-bottom: 1px solid rgba(189, 178, 55, 1);
+}
+
+
+/* Content container */
+.voice-recognition-contents {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+/* Left block */
+.left-block {
+    display: flex;
+    flex: 1 1 55%;
+    gap: 20px;
+    padding: 20px;
+}
+
+.left-block .voice-details p {
+    font-size: 1rem;
+    line-height: 1.4;
+    color: rgba(0, 0, 0, 1);
+    text-align: justify;
+    font-weight: 400;
+    font-family: cursive;
+}
+
+.left-block .voice-meta .voice-name {
+    color: rgba(189, 178, 55, 1);
+    margin: 0px;
+}
+
+.left-block .voice-image img {
+    width: 240px;
+    height: 240px;
+    border-radius: 4px;
+    object-fit: cover;
+}
+
+/* Right block */
+.right-block {
+    display: flex;
+    flex: 1 1 40%;
+    gap: 20px;
+    padding: 20px;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.right-block .voice-image.awards img {
+    width: 200px;
+    height: 280px;
+    border-radius: 6px;
+    object-fit: cover;
+}
+
+.award-details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 10px;
+}
+
+.award-title {
+    font-weight: 700;
+    color: rgba(77, 77, 77, 1);
+    font-size: 14px;
+    line-height: 25px;
+}
+
+.award-year {
+    font-size: 14px;
+    color: rgba(189, 178, 55, 1);
+    line-height: 25px;
+}
+
+/* Button */
+.view-btn {
+    padding: 8px 16px;
+    background: rgba(189, 178, 55, 1);
+    color: #fff;
+    border: none;
+    border-radius: 2px;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: background 0.8s ease;
+}
+
+.view-btn:hover {
+    background: #003080;
+}
+
+/* ======================= */
+/* RESPONSIVE STYLING      */
+/* ======================= */
+
+/* Tablet (≤992px) */
+@media (max-width: 992px) {
+    .voice-recognition-contents {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .left-block,
+    .right-block {
+        flex: 1 1 100%;
+        padding: 15px;
+    }
+
+    .left-block .voice-image img {
+        width: 180px;
+        height: 180px;
+    }
+
+    .right-block {
+        justify-content: center;
+    }
+
+    .right-block .voice-image.awards img {
+        width: 160px;
+        height: 220px;
+    }
+}
+
+/* Mobile (≤576px) */
+@media (max-width: 576px) {
+    .voice-recognition-section {
+    padding: 0px 20px;
+}
+    .voice-recognition-header h2 {
+        font-size: 22px;
+        line-height: 28px;
+        text-align: center;
+    }
+
+    .voice-recognition-header p {
+        text-align: center;
+        font-size: 0.9rem;
+    }
+
+    .left-block,
+    .right-block {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 15px;
+    }
+
+    .left-block .voice-image img {
+        width: 300px;
+        height: 180px;
+    }
+
+
+
+    /* Images full width */
+    .right-block .voice-image.awards img {
+        width: 100%;     /* full width */
+        height: auto;    /* maintain aspect ratio */
+        display: block;  /* prevent inline gaps */
+        border-radius: 0; /* optional: remove rounded corners on mobile */
+    }
+
+    .award-details {
+        gap: 6px;
+    }
+
+    .award-title {
+        font-size: 13px;
+    }
+
+    .award-year {
+        font-size: 12px;
+    }
+}

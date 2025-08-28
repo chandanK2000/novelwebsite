@@ -14,7 +14,7 @@ const leadershipData = [
     { project: "Blockchain Integration", description: "Specialist in finance and tech integration.", image: datanovelleadershipImage },
 ];
 
-const DataNovelLeadership = () => {
+const DataNovelLeadership = ({headerContent}) => {
     const sliderRef = useRef(null);
 
   const settings = {
@@ -45,11 +45,12 @@ const DataNovelLeadership = () => {
 
     return (
         <section className='datanovel-leadership-section'>
-            <div className="leadership-header text-center">
-                <h2>The DataNovel Leadership Team</h2>
-                <p>Experience. Vision. Integrity. Each member of the leadership team has uncommon experience in building companies dedicated to customer success.</p>
-            </div>
-
+            {headerContent ? headerContent : (
+                <div className="leadership-header text-center">
+                    <h2>The DataNovel Leadership Team</h2>
+                    <p>Experience. Vision. Integrity. Each member of the leadership team has uncommon experience in building companies dedicated to customer success.</p>
+                </div>
+            )}
             <Slider {...settings} ref={sliderRef} className='datanovel-leadership-cards'>
                 {leadershipData.map((member, index) => (
                     <div className='datanovel-leadership-card' key={index}>
