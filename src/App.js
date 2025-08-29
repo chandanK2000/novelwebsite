@@ -17,6 +17,7 @@ import AboutUs from "./pages/whoweare/aboutus/AboutUs";
 import DataArchitecture from "./pages/solutions/dataArchitecture/DataArchitecture";
 import Blogs from "./pages/blogs/Blogs";
 import DataEngineerings from "./pages/solutions/dataEngineerings/DataEngineerings";
+import CaseStudyDetail from "./pages/whoweare/casestudies/CaseStudyDetail";
 
 function App() {
   return (
@@ -38,7 +39,8 @@ function App() {
         <Route exact path="/faqs" element={<Faqs/>}/>
         <Route exact path="/aboutus" element={<AboutUs/>}/>
         <Route exact path="/blogs" element={<Blogs/>}/>
-    
+        <Route exact path="/casestudy/:id" element={<CaseStudyDetail/>}/>
+
       </Routes>
       <Footer/>
       <ScrollToTopButton/>

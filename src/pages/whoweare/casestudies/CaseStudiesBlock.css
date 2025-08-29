@@ -1,0 +1,158 @@
+.case-studies-block-section {
+  padding: 40px 20px;
+  background: #f9f9f9;
+}
+
+.contents {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.select-wrapper {
+  position: relative;
+  width: 250px;
+}
+
+select {
+  padding: 12px 20px;
+  border: 1px solid #ccc;
+  border-radius: 50px;
+  font-size: 16px;
+  cursor: pointer;
+  width: 100%;
+  background: #fff;
+  color: #333;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  transition: all 0.3s ease;
+}
+
+/* Custom caret */
+.select-wrapper::after {
+  content: "▼";
+  position: absolute;
+  right: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+  pointer-events: none;
+  font-size: 12px;
+  color: #333;
+}
+
+/* Hover & focus effect */
+select:hover,
+select:focus {
+  border-color: #007bff;
+  box-shadow: 0 6px 12px rgba(0, 123, 255, 0.2);
+  outline: none;
+  border-radius: 0px;
+
+
+}
+
+
+
+/* Add a subtle hover effect inside options */
+select option:hover {
+  background: #f0f0f0 !important;
+}
+
+
+
+
+.case-study-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(45%, 1fr));
+  gap: 20px;
+}
+
+.case-study-card {
+  background: #fff;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: left;
+  transition: transform 0.4s;
+  cursor: pointer;
+  color: inherit;
+  text-decoration: none;
+}
+
+.case-study-card:hover {
+  transform: translateY(-2px);
+}
+
+.case-study-card img {
+  width: 100%;
+  height: 360px;
+  max-height: 360px;
+  object-fit: cover;
+  border-radius: 6px;
+  margin: 10px 0;
+}
+
+.case-study-card h2 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: rgba(27, 14, 141, 1);
+  font-weight: 800;
+}
+
+.case-study-card h3 {
+  font-size: 16px;
+  margin: 8px 0;
+  color: rgba(11, 147, 40, 1);
+  font-weight: 700;
+}
+
+.case-study-card p {
+  font-size: 16px;
+  color: rgba(77, 77, 77, 1);
+  line-height: 1.6;
+  font-weight: 400;
+}
+
+
+.case-study-card .read-more {
+  display: inline-block;
+  margin:5px 0px;
+  color: rgba(76, 175, 79, 1);
+  text-decoration: none;
+  /* font-weight: 600; */
+}
+.case-study-card .read-more img {
+  width: 20px;
+  height: 16px;
+  margin-left: 5px;
+}
+
+.card-stats{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+}
+
+.card-stats span{
+  font-size: 14px;
+  color: #555;
+  margin-right: 15px;
+ 
+}
+
+.card-stats .likes, .card-stats .views, .card-stats .shares{
+  font-weight: 700;
+  color: rgba(77, 77, 77, 1);
+  font-size: 10px;
+ 
+}
+
+.card-stats img {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+
+}
