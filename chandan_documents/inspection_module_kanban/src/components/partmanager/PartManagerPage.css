@@ -1,0 +1,147 @@
+/* Table container */
+/* .table-responsive {
+    display: flex;
+    width: 100%;
+    max-height: 400px !important;
+} */
+
+.spinnerloadercenter {
+    display: flex;
+    justify-content: center; 
+    /* align-items: center; */
+    height: 60vh;           
+    width: 100%;
+}
+
+
+/* Table cell padding and spacing */
+th,
+td {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+th {
+    text-align: center !important;
+    font-size: 14px;
+} 
+
+td,
+th {
+    word-wrap: normal;
+}
+
+/* Table styling */
+.table td,
+.table th {
+    padding: 4px 12px;
+    text-align: left;
+}
+
+/* Disabled row styling */
+.table-disabled {
+    background-color: #f2f2f2;
+    color: #888;
+    pointer-events: none;
+}
+
+
+.parts {
+    margin: 130px 0px;
+}
+
+
+/* Adjust input boxes inside the table */
+.editedinputbox {
+    border-radius: 5px;
+    padding: 8px 14px;
+    border: 1px solid #ccc;
+    outline: none !important;
+    transition: all 0.3s ease;
+    font-size: 16px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+}
+
+.editedinputbox:focus {
+    border-color: #007bff;
+    box-shadow: 0 4px 8px rgba(0, 123, 255, 0.2);
+    background-color: #fff;
+}
+
+.disableeditedinputbox {
+    border-radius: 12px;
+    padding: 8px 14px;
+    border: 1px solid #ddd;
+    background-color: #e9ecef;
+    color: #6c757d;
+    cursor: not-allowed;
+    box-shadow: none;
+    pointer-events: none;
+}
+
+/* Dropdown menu */
+.dropdown-menu {
+    background-color: #f8f9fa;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 0px !important;
+    min-width: 110px !important;
+    animation: fadeIn 0.3s ease;
+    position: absolute;
+    z-index: 9999;
+}
+
+.dropdown-menu .dropdown-item {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    padding: 8px 10px;
+    font-size: 16px;
+    color: #212529;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.dropdown-menu .dropdown-item:hover {
+    background-color: #2084e7;
+    color: white;
+    border-radius: 2px;
+}
+
+/* Pagination container */
+.pagination-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+/* Pagination button styling */
+.paginate_button {
+    padding: 8px 16px;
+    margin: 0 3px;
+    border: 1px solid #007bff;
+    background-color: #ffffff;
+    color: #007bff;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+
+.paginate_button:hover {
+    background-color: #007bff;
+    color: #ffffff;
+    border-color: #007bff;
+}
+
+.paginate_button.active {
+    background-color: #007bff;
+    color: #ffffff;
+    border-color: #007bff;
+}
+
+.paginate_button:disabled {
+    background-color: #e0e0e0;
+    color: #b0b0b0;
+    cursor: not-allowed;
+    border-color: #e0e0e0;
+}

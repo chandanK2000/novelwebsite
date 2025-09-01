@@ -1,0 +1,144 @@
+/* .planner-page .container-fluid {
+  margin-top: 140px;
+}
+
+.planner-page .card {
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.planner-page .card-body {
+  padding: 10px 20px;
+}
+
+.planner-page .card-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.planner-page .form-group label {
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.planner-page .form-control {
+  padding: 10px;
+  font-size: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.planner-page .form-control:focus {
+  border-color: #4caf50;
+  box-shadow: 0 0 5px rgba(76, 175, 80, 0.3);
+}
+
+.planner-page .text-center {
+  color: #333;
+}
+
+.planner-page .mb-3 {
+  margin-bottom: 10px;
+}
+
+.planner-page .row.justify-content-center {
+  display: flex;
+  justify-content: space-between;
+}
+
+.planner-page .selected-difference-card {
+  background-color: #fdfafa;
+  padding: 15px 15px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.planner-page .selected-difference-card h5 {
+  font-size: 16px;
+  color: #4caf50;
+}
+
+.planner-page .selected-difference-card p {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #444;
+} */
+
+
+
+
+
+.select-small {
+  width: 100% !important;
+  font-size: 0.9em;
+  float: right;
+  padding: 0px !;
+
+}
+.select-small:focus {
+  box-shadow: none !important;
+
+}
+
+
+.partnumber{
+  width: 250px!important;
+}
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Add to your PlannerPage.css or your custom styles */
+/* .react-select__control {
+  width: 100% !important;
+  min-width: 400px; 
+  z-index: 9999 !important;
+} */
+
+/* .react-select__menu {
+  width: 100% !important;
+  max-height: 100px !important;
+  overflow-y: auto; 
+  z-index: 9999 !important;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+} */
+
+/* .react-select__option {
+  padding: 10px; 
+  font-size: 14px;
+} 
+ .react-select__single-value {
+  padding: 5px 10px; 
+}
+
+.react-datepicker-popper {
+  z-index: 1050; 
+} */
+
+.table-container {
+  display: flex;
+  flex-direction: row;
+  overflow-x: auto;
+}
+
+.static-table {
+  flex: 0 0 auto;
+  border-right: 1px solid #ddd;
+}
+
+.scrollable-table {
+  flex: 1;
+  overflow-x: auto;
+}  
+
+/* 
+.react-datepicker-popper {
+  z-index: 1050; 
+} */

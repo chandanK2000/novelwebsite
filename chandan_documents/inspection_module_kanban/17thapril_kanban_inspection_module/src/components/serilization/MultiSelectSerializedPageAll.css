@@ -1,0 +1,147 @@
+/* General Table Styling */
+.custom_table {
+    font-size: 14px;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.custom_table thead th {
+    background-color: #f8f9fa;
+    text-align: center;
+    padding: 10px;
+    border: 1px solid #ddd;
+    position: sticky; /* Fix the header */
+    top: 0; /* Stick to the top */
+    z-index: 1; /* Ensure header is above the body */
+}
+
+/* Wrapper for Tables */
+.custom_table_wrapper {
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+    width: 100%;
+    height: 420px; /* Fixed height for vertical scrolling */
+    overflow: hidden; /* Hide overflow for the wrapper */
+}
+
+/* Static Table (Left) */
+.custom_static_table_container {
+    flex: 0 0 40%;
+    overflow: hidden; /* No scrollbar for the first table */
+    position: relative; /* Required for sticky header */
+}
+
+.custom_static_table td,
+.custom_static_table th {
+    vertical-align: middle !important;
+    border: 1px solid #ddd;
+    padding: 10px;
+}
+
+/* Scrollable Table (Right) */
+.custom_scrollable_table_container {
+    flex: 0 0 60%;
+    overflow: auto; /* Enable both horizontal and vertical scrolling */
+}
+
+/* Set Equal Row Heights for Both Tables */
+.custom_static_table tbody tr,
+.custom_scrollable_table tbody tr {
+    height: 50px; /* Ensure consistent row height */
+}
+
+.custom_scrollable_table td {
+    text-align: center;
+    vertical-align: middle !important;
+    border: 1px solid #ddd;
+    padding: 13px;
+}
+
+/* Ensure both tables have the same row height */
+.custom_static_table tr,
+.custom_scrollable_table tr {
+    height: 50px; /* Ensure consistent row height */
+}
+
+/* Input fields inside scrollable table */
+.custom_scrollable_table input.form-control {
+    width: 90%;
+    text-align: center;
+    border-radius: 5px;
+    margin: 0px !important;
+    font-size: 14px;
+}
+
+.custom_static_table_container, .custom_scrollable_table_container .table {
+    min-height: 420px;
+    max-height: 420px;
+}
+
+/* Disabled input styling */
+.custom_scrollable_table input.form-control:disabled {
+    background-color: white;
+    color: #4d0606;
+    cursor: not-allowed;
+}
+
+/* Checkbox Custom Styling */
+.custom_checkboxes {
+    width: 40px;
+    text-align: center !important;
+}
+
+.custom_checkbox {
+    position: relative;
+    display: inline-block;
+    width: 28px !important;
+    height: 28px !important;
+}
+
+.custom_checkbox input[type="checkbox"] {
+    opacity: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.custom_checkbox .custom_checkbox_span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 2px solid #007bff;
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: white;
+}
+
+.custom_checkbox input[type="checkbox"]:checked + .custom_checkbox_span {
+    background-color: #007bff;
+    border: none;
+}
+
+.custom_checkbox .custom_checkbox_span::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 8px;
+    height: 8px;
+    background-color: white;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+}
+
+.custom_checkbox input[type="checkbox"]:checked + .custom_checkbox_span::before {
+    opacity: 1;
+}
+
+/* Loading Spinner */
+.spinner-border {
+    text-align: center;
+    height: 50px !important;
+    width: 50px !important;
+}

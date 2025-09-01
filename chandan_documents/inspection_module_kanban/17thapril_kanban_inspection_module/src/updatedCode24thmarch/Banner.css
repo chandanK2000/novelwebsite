@@ -1,0 +1,75 @@
+/* General container */
+.banner-container {
+    width: 100%;
+    /* max-height: 120vh; */
+    min-height: calc(100vh - 80px);
+  
+    overflow: hidden;
+    /* background-color: #f5f5f5; */
+  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 110px 0px !important;
+  }
+  
+  /* Carousel images */
+  .carousel .slide img {
+    object-fit: fill; /* Ensures full width and height */
+    height: 90vh; /* Full viewport height */
+    width: 100%;
+    border-radius: 0px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Custom arrow styling */
+  .custom-arrow {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%); 
+    background-color: white;
+    border: none;
+    color: black;
+    font-size: 2rem;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-top: 42px;
+  }
+  
+  .custom-arrow.next {
+    left: auto;
+    right: 10px;
+  }
+  
+  .custom-arrow:hover {
+    background-color: rgba(207, 182, 182, 0.8);
+  }
+  
+  /* Custom indicators */
+  .custom-indicator {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    margin: 0 5px;
+    background-color: rgba(160, 32, 185, 0.3);
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  
+  .custom-indicator.selected {
+    background-color: green;
+  }
+  
+  custom-indicator:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  

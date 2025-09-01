@@ -1,0 +1,35 @@
+.react-datepicker__triangle {
+    z-index: 9999 !important;
+  }
+  
+  .react-datepicker {
+    z-index: 9999 !important;
+  }
+  
+  .datepickers {
+    position: relative;
+    z-index: 10; 
+  }
+
+ 
+  /* Custom styles for SweetAlert2 */
+.small-popup {
+  width: 350px; 
+  padding: 10px;
+}
+
+.small-title {
+  font-size: 16px; 
+}
+
+.small-content {
+  font-size: 14px; 
+}
+
+.small-button {
+  font-size: 12px; 
+  padding: 6px 12px; 
+}
+
+
+  

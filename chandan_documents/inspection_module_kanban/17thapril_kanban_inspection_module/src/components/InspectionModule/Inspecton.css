@@ -1,0 +1,33 @@
+
+.fixed-height {
+    height: 80px;
+    resize: none; /* Optional: prevents resizing */
+  }
+
+  .fixed-height:focus {
+    box-shadow: none !important;
+  }
+
+/* This is now only for the section, not full screen */
+.section-overlay-loader {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* background-color: rgba(231, 199, 199, 0.6); */
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 6px; /* matches your form card */
+  }
+  
+  .section-overlay-loader .overlay-text {
+    margin-top: 10px;
+    font-weight: 500;
+    color: #007bff;
+    font-size: 1.2rem;
+  }
+  

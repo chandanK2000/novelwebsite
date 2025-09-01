@@ -1,0 +1,58 @@
+
+
+/* Custom Input Style */
+.custom-input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+}
+
+.custom-input:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+/* Custom Select Style */
+.custom-select {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+}
+
+.custom-select:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+/* Button Style */
+.custom-btn {
+    width: 100%;
+    padding: 12px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.custom-btn:hover {
+    background-color: #0056b3;
+}
+
+.custom-btn:disabled {
+    background-color: #b0c4de;
+}
+
+.addDetailsParts .form-group{
+    margin: 8px 0px;
+}
+
+.addDetailsParts .form-group label{
+    margin: 4px 0px;
+}

@@ -1,0 +1,44 @@
+.not-found {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 80vh; 
+    text-align: center;
+    background-color: #f7f7f7; 
+    padding: 2rem;
+}
+
+.not-found h2 {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #ff6347; /* Tomato red color */
+    margin-bottom: 1rem;
+}
+
+.not-found p {
+    font-size: 1.25rem;
+    color: #666;
+    margin-top: 0.5rem;
+    max-width: 600px;
+    line-height: 1.5;
+}
+
+.not-found .home-link {
+    font-size: 1.2rem;
+    color: #007bff;
+    text-decoration: none;
+    margin-top: 1rem;
+    transition: color 0.3s ease;
+}
+
+.not-found .home-link:hover {
+    color: #0056b3;
+    text-decoration: underline;
+}
+
+.not-found img {
+    width: 200px;
+    margin-top: 2rem;
+    border-radius: 10%;
+}

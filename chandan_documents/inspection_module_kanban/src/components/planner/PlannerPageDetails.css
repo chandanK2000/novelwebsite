@@ -1,0 +1,149 @@
+/* .react-datepicker-popper {
+  z-index: 1050;
+}
+
+.planner-page .form-group label {
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.planner-page .form-control {
+  padding: 3px 0px;
+  font-size: 1rem;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.planner-page .form-control:focus {
+  border-color: #4caf50;
+  box-shadow: 0 0 5px rgba(76, 175, 80, 0.3);
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.custom_select_plannerpage{
+  text-align: left !important;
+}
+
+
+.partnumber {
+  width: 230px !important;
+}
+
+.table td .partnumber {
+  word-wrap: break-word;
+}
+
+
+.table-container {
+  display: flex;
+  flex-direction: row;
+  overflow-x: auto;
+}
+
+.static-table {
+  flex: 0 0 auto;
+  border-right: 1px solid #ddd;
+}
+
+.scrollable-table {
+  flex: 1;
+  overflow-x: auto;
+}
+
+.daydifference{
+  width: 60% !important;
+  text-align: center;
+}
+
+.issued_details{
+  background-color: orange !important;
+  color: white !important;
+} */
+
+
+.react-datepicker-popper {
+  z-index: 1050;
+}
+
+/* .planner-page .form-group label {
+  font-size: 1rem;
+  font-weight: 500;
+} */
+
+.planner-page .form-control {
+  padding: 5px 4px;
+  font-size: 1rem;
+  border-radius: 4px;
+  box-shadow:none;
+  text-align: center;
+  margin: 0px !important;
+
+}
+
+.planner-page .form-control:focus {
+  border-color: #4caf50;
+  box-shadow: 0 0 5px rgba(76, 175, 80, 0.3);
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.custom_select_plannerpage{
+  text-align: left !important;
+}
+
+
+.partnumber {
+  width: 230px !important;
+}
+
+.table td .partnumber {
+  word-wrap: break-word;
+}
+
+
+.table-container {
+  display: flex;
+  flex-direction: row;
+  overflow-x: auto;
+}
+
+.static-table {
+  flex: 0 0 auto;
+  /* border-right: 1px solid #ddd; */
+}
+
+.scrollable-table {
+  flex: 1;
+  overflow-x: auto;
+}
+
+.daydifference{
+  width: 60% !important;
+  text-align: center;
+}
+
+.issued_details{
+  background-color: rgb(252, 209, 145) !important;
+  color: black !important;
+  margin: 0px;
+  padding: 0px;
+}
+
+.issued-row {
+  height: 18px !important; /* Adjust as needed */
+  font-size: 14px; /* Reduce text size for a more compact look */
+  padding: 2px 0; /* Reduce padding */
+  line-height: 1; /* Reduce line height */
+}
+
+

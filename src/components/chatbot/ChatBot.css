@@ -157,3 +157,42 @@
     display: block;
     overflow-x: auto;
 }
+
+/* User Info Form inside chatbot */
+.user-info-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 15px;
+    flex: 1;
+    justify-content: center;
+    align-items: stretch;
+}
+
+.user-info-form h3 {
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 16px;
+    color: #333;
+}
+
+.user-info-form input {
+    padding: 8px 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 14px;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+.user-info-form input:focus {
+    border-color: #129fdb;
+    box-shadow: 0 0 5px rgba(18, 159, 219, 0.4);
+}
+
+.user-info-form .rce-button {
+    align-self: center;
+    width: 100%;
+    margin-top: 5px;
+    font-size: 15px;
+}

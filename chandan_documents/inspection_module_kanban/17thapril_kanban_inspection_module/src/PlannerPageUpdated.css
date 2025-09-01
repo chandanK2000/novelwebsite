@@ -1,0 +1,138 @@
+.plannerpage_containers {
+    display: flex;
+    width: 100%;
+    max-height: 400px;
+    overflow: hidden; 
+    position: relative;
+}
+
+.planner_page {
+    margin: 130px 0px;
+}
+
+/* First Table: Fixed, No Scroll */
+.first-table {
+    flex: 0 0 55% !important;
+    overflow: hidden;
+
+}
+
+/* Second Table: Allow Vertical & Horizontal Scrolling */
+.second-table {
+    flex: 0 0 45% !important;
+    overflow-y: auto;
+    overflow-x: auto;
+    position: relative;
+}
+
+/* Synchronizing vertical scroll */
+.second-table .scroll-sync {
+    overflow-y: auto;
+    max-height: 400px;
+}
+
+/* Fix Table Headers */
+.table-container .table thead {
+    position: sticky;
+    top: 0;
+    background: white;
+    z-index: 2;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
+}
+
+/* Column Alignment */
+.table th,
+.table td {
+    vertical-align: middle;
+    text-align: center;
+    white-space: nowrap;
+}
+
+/* Row Height */
+.table tbody tr {
+    height: 50px;
+}
+
+/* Column Alignment */
+.plannerpage_containers .table th,
+.table td {
+    vertical-align: middle;
+    text-align: center;
+    white-space: nowrap;
+}
+
+/* Row Height */
+.plannerpage_containers .table tbody tr {
+    height: 50px;
+}
+
+/* Input Styles */
+.plannerpage_containers .table input {
+    width: 100%;
+    text-align: center;
+}
+
+/* Remove Number Input Spinner */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.plannerpage_containers .issued-qty-row {
+    height: 0px !important;
+    padding: 0px !important;
+    margin: 0px !important;
+}
+
+
+.error-border {
+    border: 2px solid red;
+}
+
+.error-message {
+    color: red;
+    font-size: 12px;
+    margin-top: 5px;
+}
+
+
+.react-datepicker-popper {
+    z-index: 9999 !important;
+  }
+
+  .viewissuedqty{
+    font-size: 20px !important;
+  }
+
+  
+  .truncate-text {
+    max-width: 150px; /* Adjust as needed */
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: inline-block;
+    vertical-align: middle;
+    cursor: pointer;
+    position: relative;
+}
+
+.truncate-text:hover::after {
+    content: attr(data-fulltext);
+    position: absolute;
+    white-space: normal;
+    background: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    padding: 5px;
+    border-radius: 5px;
+    left: 0;
+    top: 100%;
+    min-width: 200px;
+    z-index: 10;
+}
+
+.plannerpage_containers .table {
+    width: 100%;
+    table-layout: fixed;
+    text-align: center;
+}

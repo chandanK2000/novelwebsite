@@ -1,0 +1,38 @@
+.loginpage {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.modal-content {
+    width: 400px;
+    border-radius: 10px;
+}
+
+input:focus {
+    box-shadow: none !important;
+    outline: none !important;
+  }
+  .btn-close{
+    color: gray !important;
+    border-radius: 50% !important;
+    height: 25px !important;
+    width: 25px !important;
+    background-color: rgb(243, 240, 236) !important;
+
+  }
+
+  .success-message {
+    color: green;
+    font-weight: bold;
+    margin-top: 10px;
+  }
+  
+
+ 
+  

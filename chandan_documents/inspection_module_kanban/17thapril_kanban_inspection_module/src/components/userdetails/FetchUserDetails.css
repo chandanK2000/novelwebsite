@@ -1,0 +1,19 @@
+table.table th,
+table.table td {
+    text-align: left;
+    cursor: pointer;
+}
+
+table.table td {
+    vertical-align: middle;
+}
+
+.dropdown-item {
+    cursor: pointer;
+}
+
+
+.fetchuser_details td{
+    text-align: left !important;
+    padding: 5px 20px !important;
+}
