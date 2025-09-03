@@ -1,0 +1,102 @@
+.awards-banner-section {
+  padding: 80px 40px;
+  color: white;
+  background: url('https://i.pinimg.com/736x/ae/d7/80/aed7806c8bdcc887a9edbb0eb2ce8498.jpg') 
+              no-repeat center center/cover;
+}
+
+.awards-banner-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  flex-wrap: wrap;
+  margin: 0 auto;
+
+}
+
+.awards-banner-text {
+  flex: 1.2;
+}
+
+.awards-banner-text h3 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: rgba(217, 217, 217, 1);
+  margin-bottom: 20px;
+}
+
+.awards-banner-text p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  color: rgba(245, 247, 250, 1);
+}
+
+.awards-banner-image {
+  flex: 1;
+  text-align: right;
+}
+
+.awards-banner-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 12px;
+}
+
+/* ✅ Tablet screens */
+@media (max-width: 1024px) {
+  .awards-banner-text h3 {
+    font-size: 2rem;
+  }
+
+  .awards-banner-text p {
+    font-size: 1.05rem;
+  }
+
+  .awards-banner-container {
+    gap: 30px;
+  }
+}
+
+/* ✅ Mobile screens */
+@media (max-width: 768px) {
+  .awards-banner-container {
+    flex-direction: column;
+    /* text-align: center; */
+  }
+
+  .awards-banner-text {
+    flex: unset;
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .awards-banner-image {
+    text-align: center;
+  }
+
+  .awards-banner-text h3 {
+    font-size: 1.8rem;
+  }
+
+  .awards-banner-text p {
+    font-size: 1rem;
+  }
+}
+
+/* ✅ Small mobile */
+@media (max-width: 480px) {
+  .awards-banner-section {
+    padding: 100px 20px;
+    display: flex;
+    justify-content: flex-start !important;
+  }
+
+  .awards-banner-text h3 {
+    font-size: 1.5rem;
+  }
+
+  .awards-banner-text p {
+    font-size: 0.95rem;
+  }
+}

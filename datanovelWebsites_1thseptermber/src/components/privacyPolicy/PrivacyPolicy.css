@@ -1,0 +1,71 @@
+.privacy-banner {
+  background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQY44g6ofjnm4GeBrlF6ts7UQMm4_2LNVaKWQ&s');
+  padding: 100px 20px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 70vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #fff;
+}
+
+.privacy-banner h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+.privacy-banner p {
+  margin-top: 10px;
+  font-size: 1.2rem;
+}
+
+.privacy-banner .home-link {
+  color: #38bdf8;
+  text-decoration: none;
+}
+
+.privacy-banner .home-link:hover {
+  text-decoration: underline;
+}
+
+/* Swiper Pagination Dots */
+.privacy-banner-swiper .swiper-pagination-bullet {
+  background: #fff;
+  opacity: 0.7;
+}
+
+.privacy-banner-swiper .swiper-pagination-bullet-active {
+  background: #38bdf8;
+  opacity: 1;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .privacy-banner {
+    height: 50vh;
+    padding: 60px 15px;
+  }
+  .privacy-banner h1 {
+    font-size: 1.8rem;
+  }
+  .privacy-banner p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .privacy-banner {
+    height: auto;
+    padding: 40px 10px;
+  }
+  .privacy-banner h1 {
+    font-size: 1.5rem;
+  }
+  .privacy-banner p {
+    font-size: 0.9rem;
+  }
+}

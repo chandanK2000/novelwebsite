@@ -1,0 +1,192 @@
+.experts-section {
+  padding: 40px 20px;
+  background:#02002B;
+}
+
+/* Main Container */
+.experts-container {
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+/* Left Content */
+.experts-content {
+  flex: 1 1 45%;
+}
+
+.experts-heading {
+  font-size: 28px;
+  font-weight: 700;
+  color: #fff;
+  line-height: 1.5;
+}
+
+.experts-heading span {
+  color: #757779;
+}
+
+/* Right Expert Card */
+.experts-card {
+  flex: 1 1 50%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  box-shadow: 0px 6px 20px rgba(0,0,0,0.08);
+  padding: 20px;
+  border-radius: 10px;
+}
+
+/* Expert Image */
+.experts-image {
+  width: 220px;
+  height: 120px;
+  object-fit: cover;
+}
+
+/* Expert Info */
+.experts-info {
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px;
+}
+
+.experts-name {
+  font-size: 18px;
+  font-weight: 600;
+  margin: 0;
+  color: #F0F0F0;
+}
+
+.experts-role {
+  font-size: 14px;
+  color: #F0F0F0;
+  margin: 4px 0 12px;
+}
+
+/* Button */
+.experts-btn {
+  background: rgba(76, 175, 79, 1);
+  color: rgba(255, 255, 255, 1);
+  font-size: 14px;
+  font-weight: 600;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.experts-btn:hover {
+  background: rgba(56, 142, 60, 1);
+}
+
+.experts-link-section .experts-link {
+  color: #fff;
+  margin: 0px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  font-weight: 800;
+  font-size: 24px;
+}
+
+.experts-link-section .contact-arrow {
+  height: 50px;
+  width: 40px;
+  margin-top: 8px;
+  color: #FF0000;
+}
+
+/* ----------------------- Responsive ----------------------- */
+
+/* Large Devices (Desktops <1200px) */
+@media (max-width: 1200px) {
+  .experts-heading {
+    font-size: 26px;
+  }
+  .experts-image {
+    width: 280px;
+    height: 110px;
+  }
+}
+
+/* Medium Devices (Tablets <992px) */
+@media (max-width: 992px) {
+  .experts-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .experts-card {
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .experts-info {
+    margin-left: 0;
+    margin-top: 15px;
+    align-items: center;
+  }
+
+  .experts-content {
+    margin-bottom: 30px;
+  }
+}
+
+/* Small Tablets (Portrait <768px) */
+@media (max-width: 768px) {
+  .experts-heading {
+    font-size: 22px;
+    line-height: 1.4;
+  }
+  .experts-image {
+    width: 240px;
+    height: 100px;
+  }
+  .experts-name {
+    font-size: 16px;
+  }
+  .experts-role {
+    font-size: 13px;
+  }
+  .experts-btn {
+    font-size: 13px;
+    padding: 8px 14px;
+  }
+  .experts-link-section .experts-link {
+    font-size: 20px;
+    justify-content: center;
+  }
+}
+
+/* Mobile Devices (<576px) */
+@media (max-width: 576px) {
+  .experts-section {
+    padding: 30px 15px;
+  }
+  .experts-heading {
+    font-size: 20px;
+  }
+  .experts-image {
+    width: 200px;
+    height: 90px;
+  }
+  .experts-card {
+    padding: 15px;
+  }
+  .experts-btn {
+    font-size: 12px;
+    padding: 6px 12px;
+  }
+  .experts-link-section .experts-link {
+    font-size: 18px;
+  }
+  .experts-link-section .contact-arrow {
+    height: 35px;
+    width: 30px;
+  }
+}

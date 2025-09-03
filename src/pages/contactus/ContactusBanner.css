@@ -1,0 +1,79 @@
+.contactus-banner {
+  background: url('../../assets/images/contactusBanner.png') no-repeat center center / cover;
+  color: #fff;
+  padding: 80px 60px 0px;
+  display: flex;
+  min-height: 80vh;
+}
+
+.contactus-banner > div {
+  max-width: 650px;
+  position: relative;
+  z-index: 2;
+}
+
+.contactus-banner h1 {
+  font-size: 35px;
+  margin-bottom: 10px;
+  font-weight: 800;
+  color: rgba(255, 255, 255, 1);
+}
+
+.contactus-banner h3 {
+  font-size: 16px;
+  margin-bottom: 10px;
+  font-weight: 600;
+  color: rgba(245, 247, 250, 1);
+}
+
+.contactus-banner p {
+  font-size: 14px;
+  line-height: 1.6;
+  color: rgba(217, 217, 217, 1);
+}
+
+/* Tablet view */
+@media (max-width: 768px) {
+  .contactus-banner {
+    padding: 60px 20px;
+    text-align: center;
+    justify-content: center;
+    min-height: 50vh;
+  }
+
+  .contactus-banner h1 {
+    font-size: 2.2rem;
+  }
+
+  .contactus-banner h3 {
+    font-size: 1.3rem;
+  }
+
+  .contactus-banner p {
+    font-size: 0.95rem;
+    margin: 0 auto;
+  }
+}
+
+/* Mobile view - change background */
+@media (max-width: 480px) {
+  .contactus-banner {
+    padding: 40px 15px;
+    min-height: 40vh;
+    /* background: #0a0a0a; */
+    /* Or use another image: */
+    background: url('https://productcostsolutions.com/wp-content/uploads/2023/08/contact-banner.png') no-repeat center center / cover;
+  }
+
+  .contactus-banner h1 {
+    font-size: 1.8rem;
+  }
+
+  .contactus-banner h3 {
+    font-size: 1rem;
+  }
+
+  .contactus-banner p {
+    font-size: 0.85rem;
+  }
+}

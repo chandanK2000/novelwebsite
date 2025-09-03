@@ -1,0 +1,73 @@
+.work-together-section {
+  background: #fff;
+}
+
+.work-together-section h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: rgba(77, 77, 77, 1);
+}
+
+.work-together-section p {
+  font-size: 1rem;
+  color: rgba(63, 61, 61, 0.76);
+}
+
+.form-control {
+  border-radius: 8px;
+  box-shadow: none;
+  border: 1px solid #ddd;
+}
+
+.form-control:focus {
+  border-color: #0d6efd;
+  box-shadow: none !important;
+}
+
+.submit-button {
+  border-radius: 50px;
+  font-weight: 600;
+  width: 100%;
+  background: linear-gradient(91.02deg, #2C63C9 0.44%, #061E4D 83.39%);
+  border: none;
+  outline: none;
+  color: #fff;
+  padding: 10px 12px;
+}
+
+/* Responsive Tweaks */
+@media (max-width: 768px) {
+  .work-together-section h2 {
+    font-size: 1.6rem;
+    text-align: center;
+  }
+
+  .work-together-section p {
+    text-align: center;
+  }
+
+  /* Center the image on small devices */
+  .work-together-section img {
+    display: block;
+    margin: 0 auto;
+    max-width: 90%; /* prevent overflow */
+  }
+
+  .form-wrapper {
+    padding: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .work-together-section h2 {
+    font-size: 1.4rem;
+  }
+
+  .work-together-section p {
+    font-size: 0.9rem;
+  }
+
+  .work-together-section img {
+    max-width: 100%;
+  }
+}

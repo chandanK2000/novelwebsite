@@ -1,0 +1,92 @@
+.awards-events-container {
+    background-image: url('https://media.istockphoto.com/id/1482176963/photo/dark-blue-background-with-confetti-horizontal.jpg?s=612x612&w=0&k=20&c=x_9bfxcVihdhPbQHPbgPnu-PxgJD9rM5dC-YgN62tzs=' );
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 100px 40px;
+    text-align: left;
+    color: #fff;
+    position: relative;
+}
+
+.awards-events-container::after {
+    content: "";
+    position: absolute;
+    bottom: -60px;
+    left: 120px;
+    width: 50px;
+    height: 60px;
+    background: blue;
+    z-index: 2;
+}
+
+
+.awards-events-container::before {
+    content: "";
+    position: absolute;
+    top: 250px;
+    right:90px;
+    width: 50px;
+    height: 50px;
+    background-color: rgba(245, 247, 250, 1);
+    z-index: 2;
+}
+
+
+.extra-block {
+    content: "";
+    position: absolute;
+    top: 200px;
+    right: 40px;
+    width: 50px;
+    height: 50px;
+    background-color: rgba(245, 247, 250, 1);
+    z-index: 2;
+}
+
+
+
+
+
+
+.awards-events-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+.awards-events-description {
+    font-size: 1.2rem;
+    max-width: 800px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .awards-events-container {
+        padding: 60px 15px;
+    }
+
+    .awards-events-title {
+        font-size: 2rem;
+    }
+
+    .awards-events-description {
+        font-size: 1rem;
+    }
+    .awards-events-container::after, .awards-events-container::before , .extra-block{
+        content: none;
+    }
+
+}
+
+@media (max-width: 480px) {
+    .awards-events-title {
+        font-size: 1.5rem;
+    }
+
+    .awards-events-description {
+        font-size: 0.9rem;
+    }
+     .awards-events-container::after,.awards-events-container::before,.extra-block{
+        content: none;
+    }
+}

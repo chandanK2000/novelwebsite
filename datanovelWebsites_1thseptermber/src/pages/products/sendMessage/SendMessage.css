@@ -1,0 +1,55 @@
+/* Section background */
+.send-message-section {
+    background-color: #F5F7FA;
+}
+
+/* Center the form with smaller width */
+.send-message-section .form-wrapper {
+    margin: 0 auto;
+    border-radius: 4px;
+    box-shadow: 0px 0px 4px 0px #00000040;
+
+}
+
+.send-message-section .container h2{
+    color: #04275B;
+    font-weight: 600;
+    line-height: 30px;
+    
+}
+
+
+/* Labels */
+.send-message-section .form-label {
+    font-weight: 500;
+    color: #333;
+}
+
+/* Inputs */
+.send-message-section .form-control {
+    border-radius: 4px;
+    border: 1px solid #ddd;
+    /* padding: 12px; */
+    box-shadow: 0px 0px 1px 0px #00000040;
+}
+
+.send-message-section .form-control:focus {
+    box-shadow: none !important;
+    outline: none !important;
+    border-color: #ddd !important;
+}
+
+.send-message-section textarea.form-control {
+    resize: none;
+}
+
+/* Button */
+.send-message-section button {
+    border-radius: 40px;
+    font-weight: 600;
+    padding: 8px;
+    box-shadow: 0px 0px 8px 0px #263238;
+    background: linear-gradient(91.02deg, #2C63C9 0.44%, #061E4D 83.39%);
+
+    border: none;
+}
